@@ -1,0 +1,282 @@
+    Public Sub GetMetaInfo()
+            Try
+                _title = AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&")
+                If _title.ToString.Contains("A:\") Or _title.ToString.Contains("B:\") Or _title.ToString.Contains("C:\") Or _title.ToString.Contains("D:\") Or _title.ToString.Contains("E:\") Or _title.ToString.Contains("F:\") Or _title.ToString.Contains("G:\") Or _title.ToString.Contains("H:\") Or _title.ToString.Contains("I:\") Or _title.ToString.Contains("J:\") Or _title.ToString.Contains("K:\") Or _title.ToString.Contains("L:\") Or _title.ToString.Contains("M:\") Or _title.ToString.Contains("N:\") Or _title.ToString.Contains("O:\") Or _title.ToString.Contains("P:\") Or _title.ToString.Contains("Q:\") Or _title.ToString.Contains("R:\") Or _title.ToString.Contains("S:\") Or _title.ToString.Contains("T:\") Or _title.ToString.Contains("U:\") Or _title.ToString.Contains("V:\") Or _title.ToString.Contains("W:\") Or _title.ToString.Contains("X:\") Or _title.ToString.Contains("Y:\") Or _title.ToString.Contains("Z:\") Then
+                    Dim tempString As String = _title
+                    _title = Path.GetFileNameWithoutExtension(tempString)
+                    SongName.Text = _title
+                    Is_Title_Long = True
+                End If
+            Catch ex As Exception
+            End Try
+            Try     'Title
+                _title = AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&")
+                If _title.ToString.Contains("A:\") Or _title.ToString.Contains("B:\") Or _title.ToString.Contains("C:\") Or _title.ToString.Contains("D:\") Or _title.ToString.Contains("E:\") Or _title.ToString.Contains("F:\") Or _title.ToString.Contains("G:\") Or _title.ToString.Contains("H:\") Or _title.ToString.Contains("I:\") Or _title.ToString.Contains("J:\") Or _title.ToString.Contains("K:\") Or _title.ToString.Contains("L:\") Or _title.ToString.Contains("M:\") Or _title.ToString.Contains("N:\") Or _title.ToString.Contains("O:\") Or _title.ToString.Contains("P:\") Or _title.ToString.Contains("Q:\") Or _title.ToString.Contains("R:\") Or _title.ToString.Contains("S:\") Or _title.ToString.Contains("T:\") Or _title.ToString.Contains("U:\") Or _title.ToString.Contains("V:\") Or _title.ToString.Contains("W:\") Or _title.ToString.Contains("X:\") Or _title.ToString.Contains("Y:\") Or _title.ToString.Contains("Z:\") Then
+                    Dim tempString As String = _title
+
+                    _title = Path.GetFileNameWithoutExtension(tempString)
+                    Is_Title_Long = True
+                    SongName.Text = _title
+                End If
+                SongName.Text = _title
+                ToolTip1.SetToolTip(SongName, _title)
+            Catch
+                SongName.Text = "Unknown Title"
+                _title = SongName.Text
+                ToolTip1.SetToolTip(SongName, "Unknown Title")
+            End Try
+            Try     'Artist
+                _Artist = AudioPlayer.Instance.TrackList.Tracks(0).Artist.Replace(Chr(38), "&&")
+                artistlabel.Text = _Artist
+                ToolTip1.SetToolTip(artistlabel, _Artist)
+
+            Catch
+                artistlabel.Text = "Unknown Artist"
+                _Artist = artistlabel.Text
+                ToolTip1.SetToolTip(artistlabel, "Unknown Artist")
+            End Try
+            Try     'Album
+                _Album = AudioPlayer.Instance.TrackList.Tracks(0).Album.Replace(Chr(38), "&&")
+                albumlabel.Text = _Album
+                ToolTip1.SetToolTip(albumlabel, _Album)
+
+            Catch
+                albumlabel.Text = "Unknown Album"
+                _Album = albumlabel.Text
+                ToolTip1.SetToolTip(albumlabel, "Unknown Album")
+            End Try
+            Try
+                If _title.ToString.Contains("A:\") Or _title.ToString.Contains("B:\") Or _title.ToString.Contains("C:\") Or _title.ToString.Contains("D:\") Or _title.ToString.Contains("E:\") Or _title.ToString.Contains("F:\") Or _title.ToString.Contains("G:\") Or _title.ToString.Contains("H:\") Or _title.ToString.Contains("I:\") Or _title.ToString.Contains("J:\") Or _title.ToString.Contains("K:\") Or _title.ToString.Contains("L:\") Or _title.ToString.Contains("M:\") Or _title.ToString.Contains("N:\") Or _title.ToString.Contains("O:\") Or _title.ToString.Contains("P:\") Or _title.ToString.Contains("Q:\") Or _title.ToString.Contains("R:\") Or _title.ToString.Contains("S:\") Or _title.ToString.Contains("T:\") Or _title.ToString.Contains("U:\") Or _title.ToString.Contains("V:\") Or _title.ToString.Contains("W:\") Or _title.ToString.Contains("X:\") Or _title.ToString.Contains("Y:\") Or _title.ToString.Contains("Z:\") Then
+                    Dim tempString As String = _title
+                    _title = Path.GetFileNameWithoutExtension(tempString)
+                    SongName.Text = _title
+                    Is_Title_Long = True
+                End If
+            Catch ex As Exception
+            End Try
+            Try
+                If Is_Title_Long = True Then
+                    Dim tempString As String = _title
+                    SongName.Text = _title
+                End If
+            Catch ex As Exception
+            End Try
+            Try     'Duration / Length
+                _Duration = String.Format("{0}:{1:D2}", totaltimeduration.Minutes, totaltimeduration.Seconds)
+            Catch
+            End Try
+            Try     'File Size
+                _filesize = (FileIO.FileSystem.GetFileInfo(playlistboxfull.SelectedItem).Length / 1048576).ToString.Remove(5) & " MB"
+            Catch
+            End Try
+        End Sub
+        '..................Default Playlist....................
+        Public Sub GetArtworkandSuch_for_Default_Playlist()
+            Try
+                IsVideo = False
+                GetMetaInfo()
+            Catch
+                Try     'Title...........try again
+                    _title = AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&")
+                    SongName.Text = _title
+                    ToolTip1.SetToolTip(SongName, _title)
+                Catch ex As Exception
+                    SongName.Text = Path.GetFileNameWithoutExtension(playlistboxfull.SelectedItem)
+                    ToolTip1.SetToolTip(SongName, Path.GetFileNameWithoutExtension(playlistboxfull.SelectedItem))
+                End Try
+                artistlabel.Text = "Artist"
+                ToolTip1.SetToolTip(artistlabel, "Artist")
+                albumlabel.Text = "Album"
+                ToolTip1.SetToolTip(albumlabel, "Album")
+                Try
+                    If Not playlistboxfull.SelectedItem.EndsWith(".wav") And Not playlistboxfull.SelectedItem.EndsWith(".ogg") And Not playlistboxfull.SelectedItem.EndsWith(".flac") And
+                        Not playlistboxfull.SelectedItem.EndsWith(".aiff") And Not playlistboxfull.SelectedItem.EndsWith(".aac") And Not playlistboxfull.SelectedItem.EndsWith(".ape") And
+                        Not playlistboxfull.SelectedItem.EndsWith(".m4a") And Not playlistboxfull.SelectedItem.EndsWith(".wma") And Not playlistboxfull.SelectedItem.EndsWith(".mp3") And Not playlistboxfull.SelectedItem.EndsWith(".cda") Then
+                        VlcPlayer.Visible = True
+                        Artwork.Visible = False
+                        IsVideo = True
+                    End If
+                    Meta_and_Artwork_Timer.Stop()
+                Catch
+                End Try
+            End Try
+            'Artwork
+            playlistboxfull_SIC()
+            Try
+                If Not playlistboxfull.SelectedItem.EndsWith(".wav") And Not playlistboxfull.SelectedItem.EndsWith(".ogg") And Not playlistboxfull.SelectedItem.EndsWith(".flac") And
+             Not playlistboxfull.SelectedItem.EndsWith(".aiff") And Not playlistboxfull.SelectedItem.EndsWith(".aac") And Not playlistboxfull.SelectedItem.EndsWith(".ape") And
+             Not playlistboxfull.SelectedItem.EndsWith(".m4a") And Not playlistboxfull.SelectedItem.EndsWith(".wma") And Not playlistboxfull.SelectedItem.EndsWith(".mp3") And Not playlistboxfull.SelectedItem.EndsWith(".cda") _
+             And Not playlistboxfull.SelectedItem.EndsWith(".jpg") And Not playlistboxfull.SelectedItem.EndsWith(".png") And Not playlistboxfull.SelectedItem.EndsWith(".gif") And Not playlistboxfull.SelectedItem.EndsWith(".bmp") Then
+                    VlcPlayer.Visible = True
+                    Artwork.Visible = False
+                    IsVideo = True
+                Else
+                    Dim file = TagLib.File.Create(playlistboxfull.SelectedItem)
+                    VlcPlayer.Visible = False
+                    IsVideo = False
+                    Artwork.Visible = True
+                    If IO.File.Exists(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".jpg") Then
+                        Dim image As Image = System.Drawing.Bitmap.FromFile(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".jpg")
+                        Artwork.BackgroundImage = ChangeOpacity(image, My.Settings.ArtworkTransparency)
+                    ElseIf IO.File.Exists(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".png") Then
+                        Dim image As Image = System.Drawing.Bitmap.FromFile(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".png")
+                        Artwork.BackgroundImage = ChangeOpacity(image, My.Settings.ArtworkTransparency)
+                    Else
+                        If file.Tag.Pictures.Length = 0 Then
+                            If My.Computer.FileSystem.FileExists(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\folder.jpg") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\folder.jpg")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            ElseIf My.Computer.FileSystem.FileExists(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\folder.png") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\folder.png")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            ElseIf My.Computer.FileSystem.FileExists(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\cover.jpg") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(playlistboxfull.SelectedItem) + "\cover.jpg")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            Else
+                                Artwork.BackgroundImage = ChangeOpacity(My.Resources.not_available1, My.Settings.ArtworkTransparency)
+                            End If
+                        ElseIf file.Tag.Pictures.Length >= 1 Then
+                            VlcPlayer.Visible = False
+                            IsVideo = False
+                            Artwork.Visible = True
+                            Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                            Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                        Else
+                            If playlistboxfull.SelectedItem.EndsWith(".jpg") Or playlistboxfull.SelectedItem.EndsWith(".png") Or playlistboxfull.SelectedItem.EndsWith(".gif") Or
+                                playlistboxfull.SelectedItem.EndsWith(".bmp") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(playlistboxfull.SelectedItem))}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            Else
+                                VlcPlayer.Visible = True
+                                IsVideo = True
+                            End If
+                        End If
+                    End If
+                End If
+            Catch
+                Meta_and_Artwork_Timer.Stop()
+            End Try
+            AB_Timer.Start()
+            Meta_and_Artwork_Timer.Stop()
+        End Sub
+        '.....................Playlist 2.................
+        Public Sub GetArtworkandSuch_for_TabPlaylists()
+            Dim Playlist As TabPlaylists
+            Dim PlaylistFull As TabPlaylistsFull
+            Dim PlaylistPositions As TabPlaylistsPositions
+            For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                If c.GetType Is GetType(TabPlaylists) Then
+                    Playlist = c
+                End If
+                If c.GetType Is GetType(TabPlaylistsFull) Then
+                    PlaylistFull = c
+                End If
+                If c.GetType Is GetType(TabPlaylistsPositions) Then
+                    PlaylistPositions = c
+                End If
+            Next
+            Try
+                GetMetaInfo()
+                IsVideo = False
+            Catch
+                Try
+                    _title = AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&")
+                    SongName.Text = _title
+                    ToolTip1.SetToolTip(SongName, _title)
+                Catch ex As Exception
+
+                    SongName.Text = Path.GetFileNameWithoutExtension(PlaylistFull.SelectedItem)
+                    ToolTip1.SetToolTip(SongName, Path.GetFileNameWithoutExtension(PlaylistFull.SelectedItem))
+                End Try
+                Try
+                    _title = AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&")
+                    SongName.Text = _title
+                    ToolTip1.SetToolTip(SongName, _title)
+                Catch
+                End Try
+                artistlabel.Text = "Artist"
+                ToolTip1.SetToolTip(artistlabel, "Artist")
+                albumlabel.Text = "Album"
+                ToolTip1.SetToolTip(albumlabel, "Album")
+                Try
+                    If Not PlaylistFull.SelectedItem.EndsWith(".wav") And Not PlaylistFull.SelectedItem.EndsWith(".ogg") And Not PlaylistFull.SelectedItem.EndsWith(".flac") And
+                        Not PlaylistFull.SelectedItem.EndsWith(".aiff") And Not PlaylistFull.SelectedItem.EndsWith(".aac") And Not PlaylistFull.SelectedItem.EndsWith(".ape") And
+                        Not PlaylistFull.SelectedItem.EndsWith(".m4a") And Not PlaylistFull.SelectedItem.EndsWith(".wma") And Not PlaylistFull.SelectedItem.EndsWith(".mp3") And Not PlaylistFull.SelectedItem.EndsWith(".cda") Then
+                        VlcPlayer.Visible = True
+                        IsVideo = True
+                        Artwork.Visible = False
+                    End If
+                    Meta_and_Artwork_Timer.Stop()
+                Catch
+                End Try
+            End Try
+            'Artwork
+            playlistboxfull_SIC()
+            Try
+                If Not PlaylistFull.SelectedItem.EndsWith(".wav") And Not PlaylistFull.SelectedItem.EndsWith(".ogg") And Not PlaylistFull.SelectedItem.EndsWith(".flac") And
+             Not PlaylistFull.SelectedItem.EndsWith(".aiff") And Not PlaylistFull.SelectedItem.EndsWith(".aac") And Not PlaylistFull.SelectedItem.EndsWith(".ape") And
+             Not PlaylistFull.SelectedItem.EndsWith(".m4a") And Not PlaylistFull.SelectedItem.EndsWith(".wma") And Not PlaylistFull.SelectedItem.EndsWith(".mp3") And Not PlaylistFull.SelectedItem.EndsWith(".cda") _
+             And Not PlaylistFull.SelectedItem.EndsWith(".jpg") And Not PlaylistFull.SelectedItem.EndsWith(".png") And Not PlaylistFull.SelectedItem.EndsWith(".gif") And Not PlaylistFull.SelectedItem.EndsWith(".bmp") Then
+                    VlcPlayer.Visible = True
+                    IsVideo = True
+                    Artwork.Visible = False
+                Else
+                    Dim file = TagLib.File.Create(PlaylistFull.SelectedItem)
+                    VlcPlayer.Visible = False
+                    IsVideo = False
+                    Artwork.Visible = True
+                    If IO.File.Exists(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".jpg") Then
+                        Dim image As Image = System.Drawing.Bitmap.FromFile(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".jpg")
+                        Artwork.BackgroundImage = ChangeOpacity(image, My.Settings.ArtworkTransparency)
+                    ElseIf IO.File.Exists(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".png") Then
+                        Dim image As Image = System.Drawing.Bitmap.FromFile(Path.GetDirectoryName(filelocation) + "\" + Path.GetFileNameWithoutExtension(filelocation) + ".png")
+                        Artwork.BackgroundImage = ChangeOpacity(image, My.Settings.ArtworkTransparency)
+                    Else
+                        If file.Tag.Pictures.Length = 0 Then
+                            If My.Computer.FileSystem.FileExists(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\folder.jpg") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\folder.jpg")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            ElseIf My.Computer.FileSystem.FileExists(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\folder.png") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\folder.png")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            ElseIf My.Computer.FileSystem.FileExists(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\cover.jpg") Then
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(PlaylistFull.SelectedItem) + "\cover.jpg")}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            Else
+                                Artwork.BackgroundImage = ChangeOpacity(My.Resources.not_available1, My.Settings.ArtworkTransparency)
+                            End If
+
+                        ElseIf file.Tag.Pictures.Length >= 1 Then
+                            VlcPlayer.Visible = False
+                            IsVideo = False
+                            Artwork.Visible = True
+                            Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                            Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                        Else
+                            If PlaylistFull.SelectedItem.EndsWith(".jpg") Or PlaylistFull.SelectedItem.EndsWith(".png") Or PlaylistFull.SelectedItem.EndsWith(".gif") Or
+                                PlaylistFull.SelectedItem.EndsWith(".bmp") Then
+                                Artwork.Visible = True
+                                file.Tag.Pictures = New TagLib.IPicture() {TagLib.Picture.CreateFromPath(Path.GetDirectoryName(PlaylistFull.SelectedItem))}
+                                Dim bin = DirectCast(file.Tag.Pictures(0).Data.Data, Byte())
+                                Artwork.BackgroundImage = ChangeOpacity(Image.FromStream(New IO.MemoryStream(bin)), My.Settings.ArtworkTransparency)
+                            Else
+                                VlcPlayer.Visible = True
+                                IsVideo = True
+                                Artwork.Visible = False
+                            End If
+                        End If
+                    End If
+                End If
+                Meta_and_Artwork_Timer.Stop()
+            Catch
+                Meta_and_Artwork_Timer.Stop()
+            End Try
+            AB_Timer.Start()
+        End Sub

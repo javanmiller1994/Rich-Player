@@ -1,0 +1,891 @@
+#Region " VLC Player Media Status"
+
+        'Media Playing
+        Private Sub VLCplayer_MediaPlayerPlaying(sender As Object, e As EventArgs)
+
+            If VlcPlayer.playlist.isPlaying Then
+                TimerSeek.Start()
+                LabelVLCBuffering.Visible = False
+
+                If playhover = True Then
+                    PlayPauseBut.BackgroundImage = PauseHoverImage
+                Else
+                    PlayPauseBut.BackgroundImage = PauseImage
+                End If
+
+                StopBut.BackgroundImage = StopImage
+                StopBut.BackgroundImage = StopImage
+                NextBut.BackgroundImage = NextImage
+                Prevrwdisabled = False
+                PreviousBut.BackgroundImage = PreviousImage
+                NextButdisabled = False
+                NextBut.BackgroundImage = NextImage
+                TimerSeek.Enabled = True
+                VLCplayer_buffering = False
+                isVLCplaying = True
+                IsVideo = True
+                trackbarPitch.Enabled = False
+                PitchDownBut.Enabled = False
+                PitchUpBut.Enabled = False
+                PitchDownBut.Visible = False
+                PitchUpBut.Visible = False
+                trackBarSpeed.Enabled = False
+
+            Else
+                isVLCplaying = False
+                TimerSeek.Stop()
+            End If
+        End Sub
+        'Media Paused
+        Private Sub VLCplayer_MediaPlayerPaused(sender As Object, e As EventArgs)
+            If Not VlcPlayer.playlist.items Is Nothing Then
+                IsVideo = True
+            End If
+            PlayPauseBut.BackgroundImage = PlayImage
+            PlayPauseBut.BackgroundImage = PlayImage
+            Taskbar.TaskbarManager.Instance.SetProgressState(Taskbar.TaskbarProgressBarState.Paused)
+            TimerSeek.Stop()
+
+            If playhover = True Then
+                PlayPauseBut.BackgroundImage = PlayHoverImage
+            Else
+                PlayPauseBut.BackgroundImage = PlayImage
+            End If
+        End Sub
+        'Media Finished
+        Private Sub VLCplayer_MediaPlayerEndReached(sender As Object, e As EventArgs)
+            MediaFinishedSub_VLCPlayer()
+            ResetThumbnail()
+            Reset_AB_Repeat()
+        End Sub
+        'Media Finished Code
+        Private Sub MediaFinishedSub_VLCPlayer()
+
+
+            If ViewLyricsCheckbox.Checked Then
+                If CustomizeLyricsCheckbox.Checked Then
+                    IO.File.WriteAllText(TempLyrics, LabelLyrics.Text)
+                    Dim Lyrics As String = LabelLyrics.Text
+                    Dim TempLyricsSaved As Integer = IO.File.ReadAllText(TempLyrics).Length
+                    Dim CurrentLyricsSaved As Integer = IO.File.ReadAllText(SelectedSong_path_).Length
+
+                    If Not TempLyricsSaved = CurrentLyricsSaved Then
+                        Dim result As Integer = MessageBox.Show("Lyrics are not saved! Do you wish to save Lyrics?", "Save Lyrics", MessageBoxButtons.YesNo)
+                        If result = DialogResult.Yes Then
+                            IO.File.WriteAllText(SelectedSong_path_, Lyrics)
+                        End If
+                    End If
+                End If
+            End If
+
+
+            TimerSeek.Stop()
+            AB_Timer.Stop()
+            Meta_and_Artwork_Timer.Stop()
+            If Panellyrics.Visible = True Then
+                Panellyrics.AutoScrollPosition = New Point(0, 0)
+            End If
+
+            NextItem()
+            RefreshSkin()
+
+            SubtitleMenu_Clear()
+            VLCmediaOpened = False
+            IsVideo = False
+
+
+            If XtraTabControl1.SelectedTabPageIndex = 0 Then
+
+                If firstopen = False Then
+                    If repeat = False Then
+                        If Not playlistboxedit.Items.Count = 0 Then
+                           
+                            If playlistboxedit.Items.Count = 1 Then
+                                playlistboxfull.SelectedIndex = 0
+                                If Not VlcPlayer.playlist.isPlaying Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    VlcPlayer.playlist.stop()
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    VlcPlayer.playlist.items.clear()
+                                Else
+                                    If repeat = False Then
+                                        VlcPlayer.playlist.items.clear()
+                                        VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                        VlcPlayer.playlist.play()
+                                        Meta_and_Artwork_Timer.Start()
+                                    End If
+                                    Try
+                                        SongName.Text = VlcPlayer.mediaDescription.title
+                                        _title = SongName.Text
+                                        ToolTip1.SetToolTip(SongName, VlcPlayer.mediaDescription.title.Replace(Chr(38), "&&"))
+                                    Catch
+                                    End Try
+                                End If
+                            ElseIf playlistboxedit.Items.Count > 1 Then
+                                If playlistboxedit.SelectedIndex = playlistboxedit.Items.Count - 1 Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                Else
+                                    Dim Index As Integer = playlistboxedit.SelectedIndex
+                                    Index += 1
+                                    playlistboxedit.SelectedIndex = Index
+                                    playlistboxfull.SelectedIndex = Index
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+                            End If
+                            If playlistboxfull.SelectedIndex = Nothing Then
+                                playlistboxfull.SelectedIndex = 0
+                                VlcPlayer.playlist.items.clear()
+                                VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                Meta_and_Artwork_Timer.Start()
+                            End If
+                        End If
+                    Else
+
+
+                        If IsShuffle Then
+                            Dim random As New System.Random
+                            Dim Index As System.Int32 = random.Next(0, playlistboxfull.Items.Count)
+                            playlistboxfull.SelectedIndex = Index
+                            VlcPlayer.playlist.items.clear()
+                            VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                            VlcPlayer.playlist.play()
+                            Meta_and_Artwork_Timer.Start()
+                        Else
+                            If repeatOne Then
+                                VlcPlayer.playlist.items.clear()
+                                VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                VlcPlayer.playlist.play()
+                                Meta_and_Artwork_Timer.Start()
+                            ElseIf repeatAll Then
+                                If playlistboxedit.Items.Count > 1 Then
+                                    If playlistboxedit.SelectedIndex = playlistboxedit.Items.Count - 1 Then
+                                        playlistboxedit.SelectedIndex = 0
+                                        playlistboxfull.SelectedIndex = 0
+                                    Else
+                                        Dim Index As Integer = playlistboxedit.SelectedIndex
+                                        Index += 1
+                                        playlistboxedit.SelectedIndex = Index
+                                        playlistboxfull.SelectedIndex = Index
+                                    End If
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                ElseIf playlistboxedit.Items.Count = 1 Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & playlistboxfull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+
+                            End If
+                            Meta_and_Artwork_Timer.Start()
+                        End If
+                    End If
+                End If
+
+            Else
+                Dim Playlist As TabPlaylists
+                Dim PlaylistFull As TabPlaylistsFull
+                Dim PlaylistPositions As TabPlaylistsPositions
+
+                For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                    If c.GetType Is GetType(TabPlaylists) Then
+                        Playlist = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsFull) Then
+                        PlaylistFull = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsPositions) Then
+                        PlaylistPositions = c
+                    End If
+                Next
+
+                If firstopen2 = False Then
+                    If repeat = False Then
+                        If Not Playlist.Items.Count = 0 Then
+                         
+                            If Playlist.Items.Count = 1 Then
+                                PlaylistFull.SelectedIndex = 0
+                                If Not VlcPlayer.playlist.isPlaying Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                    VlcPlayer.playlist.stop()
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    VlcPlayer.playlist.items.clear()
+
+                                Else
+                                    If repeat = False Then
+                                        VlcPlayer.playlist.items.clear()
+                                        VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                        VlcPlayer.playlist.play()
+                                        Meta_and_Artwork_Timer.Start()
+                                    End If
+                                    Try
+                                        SongName.Text = VlcPlayer.mediaDescription.title
+                                        _title = SongName.Text
+                                        ToolTip1.SetToolTip(SongName, VlcPlayer.mediaDescription.title.Replace(Chr(38), "&&"))
+                                    Catch
+                                    End Try
+                                End If
+                            ElseIf Playlist.Items.Count > 1 Then
+                                If Playlist.SelectedIndex = Playlist.Items.Count - 1 Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                Else
+                                    Playlist.SelectedIndex += 1
+                                    PlaylistFull.SelectedIndex += 1
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                    Meta_and_Artwork_Timer.Start()
+
+                                End If
+                            End If
+                            If PlaylistFull.SelectedIndex = Nothing Then
+                                PlaylistFull.SelectedIndex = 0
+                                VlcPlayer.playlist.items.clear()
+                                VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                Meta_and_Artwork_Timer.Start()
+                            End If
+                        End If
+
+                    Else
+
+                        If IsShuffle Then
+                            Dim random As New System.Random
+                            Dim Index As System.Int32 = random.Next(0, PlaylistFull.Items.Count)
+                            PlaylistFull.SelectedIndex = Index
+                            VlcPlayer.playlist.items.clear()
+                            VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                            VlcPlayer.playlist.play()
+                            Meta_and_Artwork_Timer.Start()
+                        Else
+                            If repeatOne Then
+                                VlcPlayer.playlist.items.clear()
+                                VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                VlcPlayer.playlist.play()
+                                Meta_and_Artwork_Timer.Start()
+                            ElseIf repeatAll Then
+                                If Playlist.Items.Count > 1 Then
+                                    If Playlist.SelectedIndex = Playlist.Items.Count - 1 Then
+                                        Playlist.SelectedIndex = 0
+                                        PlaylistFull.SelectedIndex = 0
+                                    Else
+                                        Playlist.SelectedIndex += 1
+                                        PlaylistFull.SelectedIndex += 1
+                                    End If
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                ElseIf Playlist.Items.Count = 1 Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.add("file:///" & PlaylistFull.SelectedItem)
+                                    VlcPlayer.playlist.play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+
+                            End If
+                            Meta_and_Artwork_Timer.Start()
+                        End If
+
+                    End If
+                End If
+
+                TimerSeek.Start()
+            End If
+            If VlcPlayer.playlist.isPlaying Then
+
+                PlayPauseBut.BackgroundImage = PauseImage
+                stopdisabled = False
+                StopBut.BackgroundImage = StopImage
+                Prevrwdisabled = False
+                PreviousBut.BackgroundImage = PreviousImage
+                NextButdisabled = False
+                NextBut.BackgroundImage = NextImage
+                TimerSeek.Enabled = True
+            Else
+                PlayPauseBut.BackgroundImage = PlayImage
+                PlayPauseBut.BackgroundImage = PlayImage
+            End If
+            RefreshSkin()
+            SubtitleMenu_Clear()
+        End Sub
+
+        'Media Buffering
+        Dim VLCplayer_buffering As Boolean
+        Private Sub VLCplayer_MediaPlayerBuffering(sender As Object, e As AxAXVLC.DVLCEvents_MediaPlayerBufferingEvent)
+            LabelVLCBuffering.Text = "Buffering"
+            VLCplayer_buffering = True
+            If VlcPlayer.playlist.isPlaying Then
+                LabelVLCBuffering.Visible = True
+                Meta_and_Artwork_Timer.Start()
+                ' Meta_and_Artwork_Timer.Start()
+            Else
+                LabelVLCBuffering.Visible = False
+                Meta_and_Artwork_Timer.Stop()
+            End If
+            If VlcPlayer.playlist.items Is Nothing Then
+                LabelVLCBuffering.Visible = False
+            End If
+
+        End Sub
+        'Media Opening
+        Dim VLCmediaOpened As Boolean = False
+        Private Sub VLCplayer_MediaPlayerOpening(sender As Object, e As EventArgs)
+            IsVideo = True
+
+            If CheckBox_AllowSaveItemPosition.Checked Then
+                Dim TabIndex As Integer = XtraTabControl1.SelectedTabPageIndex
+                If TabIndex = 0 Then
+                    PlaylistPositions0.SelectedIndex = playlistboxedit.SelectedIndex
+                    If Not PlaylistPositions0.SelectedItem = 0 Then
+                        VlcPlayer.input.Position = PlaylistPositions0.SelectedItem
+                    End If
+
+                Else
+                    Dim Playlist As TabPlaylists
+                    Dim PlaylistFull As TabPlaylistsFull
+                    Dim PlaylistPositions As TabPlaylistsPositions
+                    For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                        If c.GetType Is GetType(TabPlaylists) Then
+                            Playlist = c
+                        End If
+                        If c.GetType Is GetType(TabPlaylistsFull) Then
+                            PlaylistFull = c
+                        End If
+                        If c.GetType Is GetType(TabPlaylistsPositions) Then
+                            PlaylistPositions = c
+                        End If
+                    Next
+
+                    PlaylistPositions.SelectedIndex = Playlist.SelectedIndex
+                    If Not PlaylistPositions.SelectedItem = 0 Then
+                        VlcPlayer.input.Position = PlaylistPositions.SelectedItem
+                    End If
+                End If
+            End If
+            RenderWaveForm()
+            Reset_AB_Repeat()
+            A_Repeat()
+
+            If Panellyrics.Visible = True Then
+                Panellyrics.AutoScrollPosition = New Point(0, 0)
+            End If
+            If firsttime_TimeLabel = False Then
+                firsttime_TimeLabel = True
+                timelabel.Width -= 5
+                timelabel.Left += 2
+            End If
+
+            VLCmediaOpened = True
+        End Sub
+        'Media Stopped
+        Public Sub VLCplayer_MediaPlayerStopped()
+            If VlcPlayer.Visible = True Then
+                LabelVLCBuffering.Visible = True
+                LabelVLCBuffering.Text = "Stopped"
+                LabelVLCBuffering.BringToFront()
+                VlcPlayer.Visible = False
+                IsVideo = False
+            Else
+                LabelVLCBuffering.Visible = False
+
+            End If
+            ResetThumbnail()
+            VLCmediaOpened = False
+        End Sub
+
+
+#End Region '                                <<<<<<<<<<<<                          VLC Media Status                                                >>>>>>>>>>>>
+
+#Region " BASS.NET Audio Player Media Status"
+
+        'Update
+        Private Sub timerUpdate_Tick(sender As Object, e As EventArgs)
+            If VlcPlayer.playlist.isPlaying Then LabelVLCBuffering.Visible = False
+
+
+            If IsVideo Then Return
+            Dim bassActive__1 As BASSActive = AudioPlayer.Instance.GetStreamStatus()
+
+            Select Case bassActive__1
+                Case BASSActive.BASS_ACTIVE_PLAYING
+
+                    Dim len As Long = AudioPlayer.Instance.CurrentAudioHandle.LengthInBytes
+                    Dim pos As Long = AudioPlayer.Instance.CurrentAudioHandle.Position
+
+                    Dim LenSecs As Integer = CInt(AudioPlayer.Instance.CurrentAudioHandle.LengthInSeconds)
+                    Dim PosDouble As Integer = CInt(AudioPlayer.Instance.CurrentAudioHandle.GetElapsedTime)
+
+                    ' position in bytes
+
+                    If PosDouble < LenSecs Then 'pos < len Then
+
+                        Me.SeekBar.Value = (PosDouble / LenSecs) * SeekBarMaxVal  '(pos / len) * SeekBarMaxVal
+                        DrawWavePosition(pos, len)
+                    Else
+                        AudioPlayer_EndReached()
+                    End If
+                    Try
+                        'Taskbar ProgressBar
+                        Taskbar.TaskbarManager.Instance.SetProgressValue(Getseekbar(pos, len), 100)
+                        Taskbar.TaskbarManager.Instance.SetProgressState(Taskbar.TaskbarProgressBarState.Normal)
+                    Catch ex As Exception
+                    End Try
+
+                    TimerSeekCode()
+                    If playhover = True Then
+                        PlayPauseBut.BackgroundImage = PauseHoverImage
+                    Else
+                        PlayPauseBut.BackgroundImage = PauseImage
+                    End If
+
+
+
+                    Exit Select
+                Case BASSActive.BASS_ACTIVE_STOPPED, BASSActive.BASS_ACTIVE_PAUSED, BASSActive.BASS_ACTIVE_STALLED
+                    If playhover = True Then
+                        PlayPauseBut.BackgroundImage = PlayHoverImage
+                    Else
+                        PlayPauseBut.BackgroundImage = PlayImage
+                    End If
+                    Try
+                        Taskbar.TaskbarManager.Instance.SetProgressState(Taskbar.TaskbarProgressBarState.Paused)
+                    Catch ex As Exception
+                    End Try
+
+
+            End Select
+
+
+
+        End Sub
+        'Update Spectrum
+        Private Sub SpectrumTimer_Tick()
+            If BASSActive.BASS_ACTIVE_STOPPED Then
+                RefreshSpectrumLine(False)
+            Else
+
+                RefreshSpectrumLine(True)
+            End If
+        End Sub
+
+        'Media Playing  (Unused ... i think)
+        Private Sub AudioPlayer_Playing(sender As Object, e As EventArgs)
+            If AudioPlayer.Instance.GetStreamStatus = BASSActive.BASS_ACTIVE_PLAYING Then
+                TimerSeek.Start()
+                LabelVLCBuffering.Visible = False
+
+                If playhover = True Then
+                    PlayPauseBut.BackgroundImage = PauseHoverImage
+                Else
+                    PlayPauseBut.BackgroundImage = PauseImage
+                End If
+
+                stopdisabled = False
+                StopBut.BackgroundImage = StopImage
+                StopBut.BackgroundImage = StopImage
+                NextBut.BackgroundImage = NextImage
+                Prevrwdisabled = False
+                PreviousBut.BackgroundImage = PreviousImage
+                NextButdisabled = False
+                NextBut.BackgroundImage = NextImage
+                TimerSeek.Enabled = True
+                VLCplayer_buffering = False
+            Else
+                TimerSeek.Stop()
+            End If
+
+        End Sub
+
+        'Media Finished
+        Private Sub AudioPlayer_EndReached()
+            MediaFinishedSub()
+            Reset_AB_Repeat()
+
+        End Sub
+        'Prepare
+        Public Sub Prepare()
+            ResetThumbnail()
+
+        End Sub
+
+        'Media Finished Code
+        Private Sub MediaFinishedSub()
+
+            If ViewLyricsCheckbox.Checked Then
+                If CustomizeLyricsCheckbox.Checked Then
+                    IO.File.WriteAllText(TempLyrics, LabelLyrics.Text)
+                    Dim Lyrics As String = LabelLyrics.Text
+                    Dim TempLyricsSaved As Integer = IO.File.ReadAllText(TempLyrics).Length
+                    Dim CurrentLyricsSaved As Integer = IO.File.ReadAllText(SelectedSong_path_).Length
+
+                    If Not TempLyricsSaved = CurrentLyricsSaved Then
+                        Dim result As Integer = MessageBox.Show("Lyrics are not saved! Do you wish to save Lyrics?", "Save Lyrics", MessageBoxButtons.YesNo)
+                        If result = DialogResult.Yes Then
+                            IO.File.WriteAllText(SelectedSong_path_, Lyrics)
+                        End If
+                    End If
+                End If
+            End If
+
+            TimerSeek.Stop()
+            AB_Timer.Stop()
+            Meta_and_Artwork_Timer.Stop()
+            If Panellyrics.Visible = True Then
+                Panellyrics.AutoScrollPosition = New Point(0, 0)
+            End If
+
+            If XtraTabControl1.SelectedTabPageIndex = 0 Then
+                If firstopen = False Then
+                    If repeat = False Then
+                        If Not playlistboxedit.Items.Count = 0 Then
+                            If playlistboxfull.SelectedIndex = Nothing Then
+                                playlistboxfull.SelectedIndex = 0
+                                AudioPlayer.Instance.ResetTrackList()
+                                Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                Meta_and_Artwork_Timer.Start()
+                            End If
+                            If playlistboxedit.Items.Count = 1 Then
+                                playlistboxfull.SelectedIndex = 0
+                                If Not AudioPlayer.Instance.GetStreamStatus = BASSActive.BASS_ACTIVE_PLAYING Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    AudioPlayer.Instance.Stop()
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                    AudioPlayer.Instance.ResetTrackList()
+                                Else
+                                    If repeat = False Then
+                                        AudioPlayer.Instance.ResetTrackList()
+                                        Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                        AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                        New_Play()
+                                        Meta_and_Artwork_Timer.Start()
+                                    End If
+                                    Try
+                                        SongName.Text = AudioPlayer.Instance.TrackList.Tracks(0).Title
+                                        _title = SongName.Text
+                                        ToolTip1.SetToolTip(SongName, AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&"))
+                                    Catch
+                                    End Try
+                                End If
+                            ElseIf playlistboxedit.Items.Count > 1 Then
+                                If playlistboxedit.SelectedIndex = playlistboxedit.Items.Count - 1 Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    PlayPauseBut.BackgroundImage = PlayImage
+                                Else
+                                    playlistboxedit.SelectedIndex += 1
+                                    playlistboxfull.SelectedIndex += 1
+                                    AudioPlayer.Instance.ResetTrackList()
+                                    Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                    Meta_and_Artwork_Timer.Start()
+
+                                End If
+                            End If
+                        End If
+                    Else
+
+                        If IsShuffle Then
+                            Dim random As New System.Random
+                            Dim Index As System.Int32 = random.Next(0, playlistboxfull.Items.Count)
+                            playlistboxfull.SelectedIndex = Index
+                            Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                            AudioPlayer.Instance.ResetTrackList()
+                            AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                            New_Play()
+                            Meta_and_Artwork_Timer.Start()
+                        Else
+                            If repeatOne Then
+                                AudioPlayer.Instance.ResetTrackList()
+                                Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                New_Play()
+                                Meta_and_Artwork_Timer.Start()
+                            ElseIf repeatAll Then
+                                If playlistboxedit.Items.Count > 1 Then
+                                    If playlistboxedit.SelectedIndex = playlistboxedit.Items.Count - 1 Then
+                                        playlistboxedit.SelectedIndex = 0
+                                        playlistboxfull.SelectedIndex = 0
+                                    Else
+                                        playlistboxedit.SelectedIndex += 1
+                                        playlistboxfull.SelectedIndex += 1
+                                    End If
+                                    AudioPlayer.Instance.ResetTrackList()
+                                    Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                ElseIf playlistboxedit.Items.Count = 1 Then
+                                    playlistboxedit.SelectedIndex = 0
+                                    playlistboxfull.SelectedIndex = 0
+                                    AudioPlayer.Instance.ResetTrackList()
+                                    Dim track As Track = AudioController.Track.GetTrack(playlistboxfull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+
+                            End If
+                            Meta_and_Artwork_Timer.Start()
+                        End If
+
+                    End If
+                End If
+
+            Else
+                Dim Playlist As TabPlaylists
+                Dim PlaylistFull As TabPlaylistsFull
+                Dim PlaylistPositions As TabPlaylistsPositions
+                For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                    If c.GetType Is GetType(TabPlaylists) Then
+                        Playlist = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsFull) Then
+                        PlaylistFull = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsPositions) Then
+                        PlaylistPositions = c
+                    End If
+                Next
+
+                If firstopen2 = False Then
+                    If repeat = False Then
+
+
+                        If Not Playlist.Items.Count = 0 Then
+                         
+                            If Playlist.Items.Count = 1 Then
+                                PlaylistFull.SelectedIndex = 0
+                                If Not AudioPlayer.Instance.GetStreamStatus = BASSActive.BASS_ACTIVE_PLAYING Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                    AudioPlayer.Instance.Stop()
+                                    PlayPauseBut.BackgroundImage = PlayImage
+
+                                    AudioPlayer.Instance.ResetTrackList()
+
+                                Else
+                                    If repeat = False Then
+                                        AudioPlayer.Instance.ResetTrackList()
+                                        Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                        AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                        New_Play()
+                                        Meta_and_Artwork_Timer.Start()
+                                    End If
+                                    Try
+                                        SongName.Text = AudioPlayer.Instance.TrackList.Tracks(0).Title
+                                        _title = SongName.Text
+                                        ToolTip1.SetToolTip(SongName, AudioPlayer.Instance.TrackList.Tracks(0).Title.Replace(Chr(38), "&&"))
+                                    Catch
+                                    End Try
+                                End If
+                            ElseIf Playlist.Items.Count > 1 Then
+
+                                If Playlist.SelectedIndex = Playlist.Items.Count - 1 Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                Else
+                                    Dim Index As Integer = Playlist.SelectedIndex
+                                    Index += 1
+                                    Playlist.SelectedIndex = Index
+                                    PlaylistFull.SelectedIndex = Index
+                                    AudioPlayer.Instance.ResetTrackList()
+                                    Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+                            End If
+                            If PlaylistFull.SelectedIndex = Nothing Then
+                                PlaylistFull.SelectedIndex = 0
+                                AudioPlayer.Instance.ResetTrackList()
+                                Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                Meta_and_Artwork_Timer.Start()
+                            End If
+                        End If
+                    Else
+
+
+                        If IsShuffle Then
+                            Dim random As New System.Random
+                            Dim Index As System.Int32 = random.Next(0, PlaylistFull.Items.Count)
+                            PlaylistFull.SelectedIndex = Index
+
+                            Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                            AudioPlayer.Instance.ResetTrackList()
+                            AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                            New_Play()
+                            Meta_and_Artwork_Timer.Start()
+                        Else
+                            If repeatOne Then
+                                AudioPlayer.Instance.ResetTrackList()
+
+                                Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                New_Play()
+                                Meta_and_Artwork_Timer.Start()
+                            ElseIf repeatAll Then
+                                If Playlist.Items.Count > 1 Then
+                                    If Playlist.SelectedIndex = Playlist.Items.Count - 1 Then
+                                        Playlist.SelectedIndex = 0
+                                        PlaylistFull.SelectedIndex = 0
+                                    Else
+                                        Dim Index As Integer = Playlist.SelectedIndex
+                                        Index += 1
+                                        Playlist.SelectedIndex = Index
+                                        PlaylistFull.SelectedIndex = Index
+                                    End If
+                                    AudioPlayer.Instance.ResetTrackList()
+
+                                    Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                ElseIf Playlist.Items.Count = 1 Then
+                                    Playlist.SelectedIndex = 0
+                                    PlaylistFull.SelectedIndex = 0
+                                    AudioPlayer.Instance.ResetTrackList()
+
+                                    Dim track As Track = AudioController.Track.GetTrack(PlaylistFull.SelectedItem, True)
+                                    AudioPlayer.Instance.TrackList.Tracks.Add(track)
+                                    New_Play()
+                                    Meta_and_Artwork_Timer.Start()
+                                End If
+
+                            End If
+                            Meta_and_Artwork_Timer.Start()
+                        End If
+                    End If
+                End If
+                TimerSeek.Start()
+            End If
+            If AudioPlayer.Instance.GetStreamStatus = BASSActive.BASS_ACTIVE_PLAYING Then
+
+                PlayPauseBut.BackgroundImage = PauseImage
+                stopdisabled = False
+                StopBut.BackgroundImage = StopImage
+                Prevrwdisabled = False
+                PreviousBut.BackgroundImage = PreviousImage
+                NextButdisabled = False
+                NextBut.BackgroundImage = NextImage
+                TimerSeek.Enabled = True
+            Else
+                PlayPauseBut.BackgroundImage = PlayImage
+            End If
+            RefreshSkin()
+            SubtitleMenu_Clear()
+        End Sub
+        Public Sub RefreshSkin()
+            Try
+                Dim Playlist As TabPlaylists
+                Dim PlaylistFull As TabPlaylistsFull
+                Dim PlaylistPositions As TabPlaylistsPositions
+                For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                    If c.GetType Is GetType(TabPlaylists) Then
+                        Playlist = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsFull) Then
+                        PlaylistFull = c
+                    End If
+                    If c.GetType Is GetType(TabPlaylistsPositions) Then
+                        PlaylistPositions = c
+                    End If
+                Next
+                If Not Playlist Is Nothing Then
+                    If PlaylistClosing Then
+                        GC.Collect()
+                        GC.Collect()
+                        GC.Collect()
+                        GC.Collect()
+                        PlaylistClosing = False
+                    Else
+                        RefreshApp()
+                    End If
+                End If
+            Catch ex As Exception
+            End Try
+        End Sub
+
+
+        'Media Opening
+        Dim SongStartOver As Boolean = False
+        Private Sub SeekBar_EditValueChanged(sender As Object, e As EventArgs) Handles SeekBar.EditValueChanged
+            If SongStartOver = True Then
+                If IsVideo = True Then
+                    AudioPlayer.Instance.ResetTrackList()
+                Else
+                    VlcPlayer.playlist.stop()
+                    VlcPlayer.playlist.items.clear()
+                    AudioPlayer_Song_Opening()
+                End If
+
+                SongStartOver = False
+            End If
+        End Sub
+        Private Sub AudioPlayer_Song_Opening()
+            If CheckBox_AllowSaveItemPosition.Checked Then
+                Dim TabIndex As Integer = XtraTabControl1.SelectedTabPageIndex
+
+                If TabIndex = 0 Then
+                    PlaylistPositions0.SelectedIndex = playlistboxedit.SelectedIndex
+                    If Not PlaylistPositions0.SelectedItem = 0 Then
+                        AudioPlayer.Instance.Position = PlaylistPositions0.SelectedItem
+                    End If
+                Else
+                    Dim Playlist As TabPlaylists
+                    Dim PlaylistFull As TabPlaylistsFull
+                    Dim PlaylistPositions As TabPlaylistsPositions
+                    For Each c As Control In XtraTabControl1.SelectedTabPage.Controls
+                        If c.GetType Is GetType(TabPlaylists) Then
+                            Playlist = c
+                        End If
+                        If c.GetType Is GetType(TabPlaylistsFull) Then
+                            PlaylistFull = c
+                        End If
+                        If c.GetType Is GetType(TabPlaylistsPositions) Then
+                            PlaylistPositions = c
+                        End If
+                    Next
+                    PlaylistPositions.SelectedIndex = Playlist.SelectedIndex
+                    If Not PlaylistPositions.SelectedItem = 0 Then
+
+                        AudioPlayer.Instance.Position = PlaylistPositions.SelectedItem
+                    End If
+                End If
+
+            End If
+
+            RenderWaveForm()
+            Reset_AB_Repeat()
+            A_Repeat()
+
+            If Panellyrics.Visible = True Then
+                Panellyrics.AutoScrollPosition = New Point(0, 0)
+            End If
+            If firsttime_TimeLabel = False Then
+                firsttime_TimeLabel = True
+                timelabel.Width -= 5
+                timelabel.Left += 2
+            End If
+        End Sub
+
+
+
+#End Region '                     <<<<<<<<<<<<                          BASS.NET Media Status                                           >>>>>>>>>>>>

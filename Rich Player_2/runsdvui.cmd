@@ -1,0 +1,2 @@
+cd /d "C:\Users\Javan\Documents\Visual Studio 2013\Projects\Rich Player - Standard Version _ BASS.NET\Rich Player_2" &msbuild "Rich Player.vbproj" /t:sdvViewer /p:configuration="Release" /p:platform=x86
+exit %errorlevel% 

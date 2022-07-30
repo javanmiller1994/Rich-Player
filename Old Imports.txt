@@ -1,0 +1,10 @@
+'Imports ID3TagLibrary.ID3v2Tag
+'Imports Microsoft.VisualBasic
+'Imports System
+'Imports Microsoft.Win32
+'Imports System.ComponentModel
+'Imports System.Text
+'Imports ID3TagLibrary.ID3v2Tag
+'Imports Microsoft.WindowsAPICodePack.Shell
+'Imports DevExpress.XtraEditors.Drawing
+'Imports System.IO.Path

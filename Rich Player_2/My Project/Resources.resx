@@ -1,0 +1,1057 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="form_bg_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_6_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_6_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_reset_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_reset_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Fullscreen_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Fullscreen_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Max_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Max_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Max_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Max_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Favorite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Arrow_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_Arrow_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrow_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrow_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fast_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fast_Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anivers_Regular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anivers-Regular.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Edit_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveTop_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveTop_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveBottom_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveBottom_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close_NewDesign_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close_NewDesign_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slow_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slow_Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwitchBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Remove_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Remove_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Remove_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Remove_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Next_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Next_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemovePosition_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemovePosition_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveBottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveBottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Arrow_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_Arrow_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Off_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Off_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_cb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_cb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Spectrum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Spectrum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Add_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Add_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Settings_Slim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Settings_Slim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spectrum_ex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spectrum_ex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resize_Grabber_New_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resize_Grabber_New_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamburger_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hamburger_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Min" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camo_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camo_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamburger_1_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hamburger_1_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iheartradio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iheartradio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Favorite_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="not_available1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\not_available1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Skin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Skin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music_Note_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music_Note_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Songs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Songs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SavePosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SavePosition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RZVertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RZVertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_settings_480" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-settings-480.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify_Logo_RGB_Green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify_Logo_RGB_Green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_cb_Checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_cb_Checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rich_Player_mini_mode_example" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rich Player_mini_mode_example.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemovePosition" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemovePosition.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Minus_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Minus_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_11png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_11png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YouTube_icon_full_color_favicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YouTube-icon-full_color favicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveBottom_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveBottom_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close_NewDesign_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close_NewDesign_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Hover_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Hover_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveTop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_B_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_B_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SpectrumX16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SpectrumX16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_View" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_View.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_android" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back_android.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Add_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Add_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Hover_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Hover_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="View_1x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\View_1x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlist_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlist_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Active_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Active_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forward_Arrow_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward_Arrow_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="map_with_placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\map-with-placeholder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Previous_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Previous_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resize_Grabber_New_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resize_Grabber_New_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveUp_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveUp_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Minus_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Minus_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Refresh_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Refresh_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_AppName_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_AppName_trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SavePosition_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SavePosition_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Three_Dots_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Three_Dots_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveTop_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveTop_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Add_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Add_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrow_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrow_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveX10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SaveX10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_reset_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_reset_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_reset_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_reset_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Refresh_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Refresh_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchBack_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwitchBack_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="settings_16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings_16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_6_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_6_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Off_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Off_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="forward_android" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\forward_android.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yt_icon_mono_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yt_icon_mono_light.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_9.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Edit_Slim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Edit_Slim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fast_Arrow_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fast_Arrow_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Spectrum_Colored1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Spectrum_Colored1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_AppName_Active_trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_AppName_Active_trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_1_example" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_1_example.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify_Icon_RGB_Black_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify_Icon_RGB_Black_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_A_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_A_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_Rexford_Rich_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Rexford_Rich_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slow_Arrow_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slow_Arrow_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close_NewDesign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close_NewDesign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Three_Dots_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Three_Dots_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_4_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_4_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Color_Wheelx16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Color_Wheelx16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whatsapp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whatsapp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Favorite_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Favorite_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_YouTube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_YouTube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_options" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_options.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Max" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Max.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Hover_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Hover_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Save_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Save_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrowRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrowRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_3_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop_3_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Resize_Grabber_New_Norm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Resize_Grabber_New_Norm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_4_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_4_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Color_Wheel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Color_Wheel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Fullscreen_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Fullscreen_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pitch_Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pitch_Text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrowRight_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrowRight_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RemovePosition_Pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RemovePosition_Pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayPause_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayPause_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_7.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify_Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify_Small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_reset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Three_Dots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Three_Dots.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_8.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music_Note_1_14x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music_Note_1_14x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Music.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayerAppIcon_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayerAppIcon_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Off_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Off_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Slow_Arrow_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slow_Arrow_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_B_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_B_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppName_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppName_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_5_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_5_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_A_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_A_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Gradient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Gradient.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppName_Active_Colored_Deactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppName_Active_Colored_Deactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hotkeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hotkeys.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_ShufflePlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_ShufflePlay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Media" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Media.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_Youtube" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_Youtube.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_A_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_A_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Eqalizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Eqalizer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrowRight_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrowRight_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_RichPlayer_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_RichPlayer_6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forward_Arrow_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward_Arrow_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PandoraIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PandoraIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Active_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Active_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveUp_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveUp_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Speed_Text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Speed_Text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Off_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Off_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlist_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlist_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AB_Repeat_BG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AB_Repeat_BG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchBack_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SwitchBack_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_A_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_A_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppNameDeactive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppNameDeactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SavePosition_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SavePosition_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveDown_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveDown_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_View1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_View1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Forward_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward_Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_AppName_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_AppName_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_reset_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_reset_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Spectrum_Colored" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Spectrum_Colored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsX16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LyricsX16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Opacity_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Opacity_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Radio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Radio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Playlists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Playlists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prev_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prev_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExtendArrow_Shrink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExtendArrow_Shrink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Min_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Min_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppName_Large_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppName_Large_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppName_Colored_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppName_Colored_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveDown_PRess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveDown_PRess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Previous_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Previous_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_pressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One_pressed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_MoveUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_MoveUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Shuffle_Press_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_Press_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppName_Large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppName_Large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_B_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_B_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TitleBar_Min_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TitleBar_Min_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Previous_3_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Previous_3_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_6_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_6_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_B_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_B_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_ControlsBG_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_ControlsBG_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="One_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\One_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuIcon_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcon_Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Add_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Add_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form_bg_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form_bg_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RichPlayer_Design_AppName" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RichPlayer_Design_AppName.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fast_Arrow_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fast_Arrow_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamburger_1_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hamburger_1_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browser_Next_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Browser_Next_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Next_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Next_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RZVertical1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RZVertical.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="New_Design_Shuffle_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Shuffle_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop_4_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop_4_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_Save_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_Save_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOff_Hover_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOff_Hover_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatOne_Active_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatOne_Active_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="New_Design_RepeatAll_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\New_Design_RepeatAll_Active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists_2_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists_2_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlists_2_Press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Playlists_2_Press.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

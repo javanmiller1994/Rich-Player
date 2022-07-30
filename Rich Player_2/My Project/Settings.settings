@@ -1,0 +1,1324 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PlayPauseKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StopKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PreviousKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="NextKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Repeat" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Shuffle" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlayPauseKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PreviousKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="NextKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="StopKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SkipForwardKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SkipForwardKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SkipBackwardsKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SkipBackwardsKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlayerLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="StartupCheckBoxState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="StartupCheckBoxStateCurrent" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PlayOnStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="hasbackground" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OptionsClosed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FormSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">650, 352</Value>
+    </Setting>
+    <Setting Name="CheckStateNavigation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CheckStateFullScreen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CheckStateSongBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TempPlay" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Arkey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Brkey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ABrkey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Slowkey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="FastKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="SpeedNormkey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ArKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BrKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ABrKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SlowKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FastKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SpeedNormCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ArKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BrKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ABrKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SlowKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FastKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SpeedNormAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CheckStateLyrics" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CheckStateLyricsCustomize" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FormMaximized" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FullSize" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CheckStateTime" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CheckStatePlayerSpeed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsSkinTouch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TouchFriendly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SkinChanged" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WasChecked" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ArtworkTransparency" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.75</Value>
+    </Setting>
+    <Setting Name="YoutubePlaylistHasFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EnablePlayerVolumeCheckState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="YoutubePlaylistLastedPlayed" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveItemPosition" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SaveItemPositionItemName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveItemPositionIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TopBlurOpacity" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">0.9</Value>
+    </Setting>
+    <Setting Name="CustomImageFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CustomImageCheckState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CurrentPlaylistSelected" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlaylistsCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlaylistNames" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Playlist0&lt;/string&gt;
+  &lt;string&gt;Playlist1&lt;/string&gt;
+  &lt;string&gt;Playlist2&lt;/string&gt;
+  &lt;string&gt;Playlist3&lt;/string&gt;
+  &lt;string&gt;Playlist4&lt;/string&gt;
+  &lt;string&gt;Playlist5&lt;/string&gt;
+  &lt;string&gt;Playlist6&lt;/string&gt;
+  &lt;string&gt;Playlist7&lt;/string&gt;
+  &lt;string&gt;Playlist8&lt;/string&gt;
+  &lt;string&gt;Playlist9&lt;/string&gt;
+  &lt;string&gt;Playlist10&lt;/string&gt;
+  &lt;string&gt;Playlist11&lt;/string&gt;
+  &lt;string&gt;Playlist12&lt;/string&gt;
+  &lt;string&gt;Playlist13&lt;/string&gt;
+  &lt;string&gt;Playlist14&lt;/string&gt;
+  &lt;string&gt;Playlist15&lt;/string&gt;
+  &lt;string&gt;Playlist16&lt;/string&gt;
+  &lt;string&gt;Playlist17&lt;/string&gt;
+  &lt;string&gt;Playlist18&lt;/string&gt;
+  &lt;string&gt;Playlist19&lt;/string&gt;
+  &lt;string&gt;Playlist20&lt;/string&gt;
+  &lt;string&gt;Playlist21&lt;/string&gt;
+  &lt;string&gt;Playlist22&lt;/string&gt;
+  &lt;string&gt;Playlist23&lt;/string&gt;
+  &lt;string&gt;Playlist24&lt;/string&gt;
+  &lt;string&gt;Playlist25&lt;/string&gt;
+  &lt;string&gt;Playlist26&lt;/string&gt;
+  &lt;string&gt;Playlist27&lt;/string&gt;
+  &lt;string&gt;Playlist28&lt;/string&gt;
+  &lt;string&gt;Playlist29&lt;/string&gt;
+  &lt;string&gt;Playlist30&lt;/string&gt;
+  &lt;string&gt;Playlist31&lt;/string&gt;
+  &lt;string&gt;Playlist32&lt;/string&gt;
+  &lt;string&gt;Playlist33&lt;/string&gt;
+  &lt;string&gt;Playlist34&lt;/string&gt;
+  &lt;string&gt;Playlist35&lt;/string&gt;
+  &lt;string&gt;Playlist36&lt;/string&gt;
+  &lt;string&gt;Playlist37&lt;/string&gt;
+  &lt;string&gt;Playlist38&lt;/string&gt;
+  &lt;string&gt;Playlist39&lt;/string&gt;
+  &lt;string&gt;Playlist40&lt;/string&gt;
+  &lt;string&gt;Playlist41&lt;/string&gt;
+  &lt;string&gt;Playlist42&lt;/string&gt;
+  &lt;string&gt;Playlist43&lt;/string&gt;
+  &lt;string&gt;Playlist44&lt;/string&gt;
+  &lt;string&gt;Playlist45&lt;/string&gt;
+  &lt;string&gt;Playlist46&lt;/string&gt;
+  &lt;string&gt;Playlist47&lt;/string&gt;
+  &lt;string&gt;Playlist48&lt;/string&gt;
+  &lt;string&gt;Playlist49&lt;/string&gt;
+  &lt;string&gt;Playlist50&lt;/string&gt;
+  &lt;string&gt;Playlist51&lt;/string&gt;
+  &lt;string&gt;Playlist52&lt;/string&gt;
+  &lt;string&gt;Playlist53&lt;/string&gt;
+  &lt;string&gt;Playlist54&lt;/string&gt;
+  &lt;string&gt;Playlist55&lt;/string&gt;
+  &lt;string&gt;Playlist56&lt;/string&gt;
+  &lt;string&gt;Playlist57&lt;/string&gt;
+  &lt;string&gt;Playlist58&lt;/string&gt;
+  &lt;string&gt;Playlist59&lt;/string&gt;
+  &lt;string&gt;Playlist60&lt;/string&gt;
+  &lt;string&gt;Playlist61&lt;/string&gt;
+  &lt;string&gt;Playlist62&lt;/string&gt;
+  &lt;string&gt;Playlist63&lt;/string&gt;
+  &lt;string&gt;Playlist64&lt;/string&gt;
+  &lt;string&gt;Playlist65&lt;/string&gt;
+  &lt;string&gt;Playlist66&lt;/string&gt;
+  &lt;string&gt;Playlist67&lt;/string&gt;
+  &lt;string&gt;Playlist68&lt;/string&gt;
+  &lt;string&gt;Playlist69&lt;/string&gt;
+  &lt;string&gt;Playlist70&lt;/string&gt;
+  &lt;string&gt;Playlist71&lt;/string&gt;
+  &lt;string&gt;Playlist72&lt;/string&gt;
+  &lt;string&gt;Playlist73&lt;/string&gt;
+  &lt;string&gt;Playlist74&lt;/string&gt;
+  &lt;string&gt;Playlist75&lt;/string&gt;
+  &lt;string&gt;Playlist76&lt;/string&gt;
+  &lt;string&gt;Playlist77&lt;/string&gt;
+  &lt;string&gt;Playlist78&lt;/string&gt;
+  &lt;string&gt;Playlist79&lt;/string&gt;
+  &lt;string&gt;Playlist80&lt;/string&gt;
+  &lt;string&gt;Playlist81&lt;/string&gt;
+  &lt;string&gt;Playlist82&lt;/string&gt;
+  &lt;string&gt;Playlist83&lt;/string&gt;
+  &lt;string&gt;Playlist84&lt;/string&gt;
+  &lt;string&gt;Playlist85&lt;/string&gt;
+  &lt;string&gt;Playlist86&lt;/string&gt;
+  &lt;string&gt;Playlist87&lt;/string&gt;
+  &lt;string&gt;Playlist88&lt;/string&gt;
+  &lt;string&gt;Playlist89&lt;/string&gt;
+  &lt;string&gt;Playlist90&lt;/string&gt;
+  &lt;string&gt;Playlist91&lt;/string&gt;
+  &lt;string&gt;Playlist92&lt;/string&gt;
+  &lt;string&gt;Playlist93&lt;/string&gt;
+  &lt;string&gt;Playlist94&lt;/string&gt;
+  &lt;string&gt;Playlist95&lt;/string&gt;
+  &lt;string&gt;Playlist96&lt;/string&gt;
+  &lt;string&gt;Playlist97&lt;/string&gt;
+  &lt;string&gt;Playlist98&lt;/string&gt;
+  &lt;string&gt;Playlist99&lt;/string&gt;
+  &lt;string&gt;Playlist100&lt;/string&gt;
+  &lt;string&gt;Playlist101&lt;/string&gt;
+  &lt;string&gt;Playlist102&lt;/string&gt;
+  &lt;string&gt;Playlist103&lt;/string&gt;
+  &lt;string&gt;Playlist104&lt;/string&gt;
+  &lt;string&gt;Playlist105&lt;/string&gt;
+  &lt;string&gt;Playlist106&lt;/string&gt;
+  &lt;string&gt;Playlist107&lt;/string&gt;
+  &lt;string&gt;Playlist108&lt;/string&gt;
+  &lt;string&gt;Playlist109&lt;/string&gt;
+  &lt;string&gt;Playlist110&lt;/string&gt;
+  &lt;string&gt;Playlist111&lt;/string&gt;
+  &lt;string&gt;Playlist112&lt;/string&gt;
+  &lt;string&gt;Playlist113&lt;/string&gt;
+  &lt;string&gt;Playlist114&lt;/string&gt;
+  &lt;string&gt;Playlist115&lt;/string&gt;
+  &lt;string&gt;Playlist116&lt;/string&gt;
+  &lt;string&gt;Playlist117&lt;/string&gt;
+  &lt;string&gt;Playlist118&lt;/string&gt;
+  &lt;string&gt;Playlist119&lt;/string&gt;
+  &lt;string&gt;Playlist120&lt;/string&gt;
+  &lt;string&gt;Playlist121&lt;/string&gt;
+  &lt;string&gt;Playlist122&lt;/string&gt;
+  &lt;string&gt;Playlist123&lt;/string&gt;
+  &lt;string&gt;Playlist124&lt;/string&gt;
+  &lt;string&gt;Playlist125&lt;/string&gt;
+  &lt;string&gt;Playlist126&lt;/string&gt;
+  &lt;string&gt;Playlist127&lt;/string&gt;
+  &lt;string&gt;Playlist128&lt;/string&gt;
+  &lt;string&gt;Playlist129&lt;/string&gt;
+  &lt;string&gt;Playlist130&lt;/string&gt;
+  &lt;string&gt;Playlist131&lt;/string&gt;
+  &lt;string&gt;Playlist132&lt;/string&gt;
+  &lt;string&gt;Playlist133&lt;/string&gt;
+  &lt;string&gt;Playlist134&lt;/string&gt;
+  &lt;string&gt;Playlist135&lt;/string&gt;
+  &lt;string&gt;Playlist136&lt;/string&gt;
+  &lt;string&gt;Playlist137&lt;/string&gt;
+  &lt;string&gt;Playlist138&lt;/string&gt;
+  &lt;string&gt;Playlist139&lt;/string&gt;
+  &lt;string&gt;Playlist140&lt;/string&gt;
+  &lt;string&gt;Playlist141&lt;/string&gt;
+  &lt;string&gt;Playlist142&lt;/string&gt;
+  &lt;string&gt;Playlist143&lt;/string&gt;
+  &lt;string&gt;Playlist144&lt;/string&gt;
+  &lt;string&gt;Playlist145&lt;/string&gt;
+  &lt;string&gt;Playlist146&lt;/string&gt;
+  &lt;string&gt;Playlist147&lt;/string&gt;
+  &lt;string&gt;Playlist148&lt;/string&gt;
+  &lt;string&gt;Playlist149&lt;/string&gt;
+  &lt;string&gt;Playlist150&lt;/string&gt;
+  &lt;string&gt;Playlist151&lt;/string&gt;
+  &lt;string&gt;Playlist152&lt;/string&gt;
+  &lt;string&gt;Playlist153&lt;/string&gt;
+  &lt;string&gt;Playlist154&lt;/string&gt;
+  &lt;string&gt;Playlist155&lt;/string&gt;
+  &lt;string&gt;Playlist156&lt;/string&gt;
+  &lt;string&gt;Playlist157&lt;/string&gt;
+  &lt;string&gt;Playlist158&lt;/string&gt;
+  &lt;string&gt;Playlist159&lt;/string&gt;
+  &lt;string&gt;Playlist160&lt;/string&gt;
+  &lt;string&gt;Playlist161&lt;/string&gt;
+  &lt;string&gt;Playlist162&lt;/string&gt;
+  &lt;string&gt;Playlist163&lt;/string&gt;
+  &lt;string&gt;Playlist164&lt;/string&gt;
+  &lt;string&gt;Playlist165&lt;/string&gt;
+  &lt;string&gt;Playlist166&lt;/string&gt;
+  &lt;string&gt;Playlist167&lt;/string&gt;
+  &lt;string&gt;Playlist168&lt;/string&gt;
+  &lt;string&gt;Playlist169&lt;/string&gt;
+  &lt;string&gt;Playlist170&lt;/string&gt;
+  &lt;string&gt;Playlist171&lt;/string&gt;
+  &lt;string&gt;Playlist172&lt;/string&gt;
+  &lt;string&gt;Playlist173&lt;/string&gt;
+  &lt;string&gt;Playlist174&lt;/string&gt;
+  &lt;string&gt;Playlist175&lt;/string&gt;
+  &lt;string&gt;Playlist176&lt;/string&gt;
+  &lt;string&gt;Playlist177&lt;/string&gt;
+  &lt;string&gt;Playlist178&lt;/string&gt;
+  &lt;string&gt;Playlist179&lt;/string&gt;
+  &lt;string&gt;Playlist180&lt;/string&gt;
+  &lt;string&gt;Playlist181&lt;/string&gt;
+  &lt;string&gt;Playlist182&lt;/string&gt;
+  &lt;string&gt;Playlist183&lt;/string&gt;
+  &lt;string&gt;Playlist184&lt;/string&gt;
+  &lt;string&gt;Playlist185&lt;/string&gt;
+  &lt;string&gt;Playlist186&lt;/string&gt;
+  &lt;string&gt;Playlist187&lt;/string&gt;
+  &lt;string&gt;Playlist188&lt;/string&gt;
+  &lt;string&gt;Playlist189&lt;/string&gt;
+  &lt;string&gt;Playlist190&lt;/string&gt;
+  &lt;string&gt;Playlist191&lt;/string&gt;
+  &lt;string&gt;Playlist192&lt;/string&gt;
+  &lt;string&gt;Playlist193&lt;/string&gt;
+  &lt;string&gt;Playlist194&lt;/string&gt;
+  &lt;string&gt;Playlist195&lt;/string&gt;
+  &lt;string&gt;Playlist196&lt;/string&gt;
+  &lt;string&gt;Playlist197&lt;/string&gt;
+  &lt;string&gt;Playlist198&lt;/string&gt;
+  &lt;string&gt;Playlist199&lt;/string&gt;
+  &lt;string&gt;Playlist200&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LastPlayedPositions" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+  &lt;string&gt;0&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PlayWhenTabActive" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+  &lt;string&gt;FALSE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LastPlayedSongs" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+  &lt;string&gt;Nothing&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PlaylistsSelected" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="LargeArrows_CheckBoxState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BassEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">teamreis@mail.ru</Value>
+    </Setting>
+    <Setting Name="BassCode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2X182328162238</Value>
+    </Setting>
+    <Setting Name="DefaultDevice" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="PitchDownKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="PitchDownKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PitchDownKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PitchUpKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="PitchUpKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PitchUpKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PitchResetKey" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="PitchResetKeyCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PitchResetKeyAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SplitterVal" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">377</Value>
+    </Setting>
+    <Setting Name="BASS_Speed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BASS_Pitch" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Player_Volume" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="DeviceIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlaylistSearchBoxCheckState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Hue" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Saturation" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Lightness" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PlaylistsFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Segoe UI, 9.75pt</Value>
+    </Setting>
+    <Setting Name="PlaylistRowHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="AutoSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ValueBass" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ValueMidrange" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ValueTreble" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="MiniModeOn" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OriginalSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="OriginalLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="IsExpandedRight" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IsExtendedDown" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TabOrientation" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="TabWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="QuickOpen" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FirstTimeSetup" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Playlist0HasFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EnhancedSkin" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SpectrumColor1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">100, 132, 200</Value>
+    </Setting>
+    <Setting Name="SpectrumColor2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">98, 174, 145</Value>
+    </Setting>
+    <Setting Name="AudioSettings" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SpectrumLineWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="SpectrumType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Line</Value>
+    </Setting>
+    <Setting Name="TBGradientCheckState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ControlsBGOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="seekbarShape" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="seekbarBarLeft" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">23, 119, 151</Value>
+    </Setting>
+    <Setting Name="seekbarBarLeftInactive" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="seekbarBarRight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">60, 60, 60</Value>
+    </Setting>
+    <Setting Name="seekbarBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 35, 35</Value>
+    </Setting>
+    <Setting Name="seekbarSlider" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="speedbarShape" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="speedbarBarLeft" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">23, 119, 151</Value>
+    </Setting>
+    <Setting Name="speedbarBarRight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">60, 60, 60</Value>
+    </Setting>
+    <Setting Name="speedbarBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 35, 35</Value>
+    </Setting>
+    <Setting Name="speedbarSlider" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="pitchbarShape" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="pitchbarBarLeft" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">23, 119, 151</Value>
+    </Setting>
+    <Setting Name="pitchbarBarRight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">60, 60, 60</Value>
+    </Setting>
+    <Setting Name="pitchbarBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 35, 35</Value>
+    </Setting>
+    <Setting Name="pitchbarSlider" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="volumebarShape" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="volumebarBarLeft" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">23, 119, 151</Value>
+    </Setting>
+    <Setting Name="volumebarBarRight" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">60, 60, 60</Value>
+    </Setting>
+    <Setting Name="volumebarBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">35, 35, 35</Value>
+    </Setting>
+    <Setting Name="volumebarSlider" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="speedbarBarLeftInactive" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="pitchbarBarLeftInactive" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="volumebarBarLeftInactive" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="SlidersFilledSeek" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SlidersFilledVolume" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SlidersFilledSpeed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SlidersFilledPitch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BorderThicknessSeek" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BorderThicknessVolume" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BorderThicknessSpeed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BorderThicknessPitch" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="UseIconShadows" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FavColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">153, 215, 255</Value>
+    </Setting>
+    <Setting Name="BackgroundImageLayout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AudioOptimization" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="FormBorder" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">47, 139, 214</Value>
+    </Setting>
+    <Setting Name="FormBorderUse" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="spotify_username" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="spotify_password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DriveMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CarFormOpened" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EQ0" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ3" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ4" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ5" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ6" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ7" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ8" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EQ9" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="seekbarText" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="seekbarTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="speedbarText" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="speedbarTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="pitchbarText" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="pitchbarTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="volumebarText" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="volumebarTextColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Silver</Value>
+    </Setting>
+    <Setting Name="YouTubeURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="YouTubeOpened" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RadioOpened" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RadioURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RadioStation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UseMediaKeys" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PlayFavorites" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="YouTubeHotkeys" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="KeyFullscreen" Type="System.Windows.Forms.Keys" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="KeyFullscreenAlt" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="KeyFullscreenCtrl" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SimplisticMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

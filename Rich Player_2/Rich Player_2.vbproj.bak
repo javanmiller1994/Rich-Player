@@ -1,0 +1,1303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86979D1E-053C-49A4-A062-EC8A86B10766}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rich_Player</RootNamespace>
+    <AssemblyName>Rich Player</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\..\..\..\bin\x86\Release\</OutputPath>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <WarningLevel>0</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Sub Main</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons\RichPlayer_6.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8FBB12BA2524E6A8EC4B291797D5AC5CA45F894B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Rich Player_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AXVLC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\References\AxInterop.AXVLC.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="CoreAudio, Version=2.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\References\CoreAudio.dll</HintPath>
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v13.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v13.2">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\References\Microsoft.WindowsAPICodePack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\References\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="taglib-sharp">
+      <HintPath>..\..\Jamill Player\Jamill Player\bin\Debug\taglib-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2013.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UltraID3Lib, Version=0.9.6.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\References\UltraID3Lib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutForm.vb" />
+    <Compile Include="Controls\AlphaBlendTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Class1.vb" />
+    <Compile Include="Forms\Form1.vb" />
+    <Compile Include="Forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTouch.Designer.vb">
+      <DependentUpon>FormTouch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormTouch.vb" />
+    <Compile Include="Forms\FormYoutube.Designer.vb">
+      <DependentUpon>FormYoutube.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormYoutube.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\GlobalSuppressions.vb" />
+    <Compile Include="Forms\hotkeysfrm.Designer.vb">
+      <DependentUpon>hotkeysfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\hotkeysfrm.vb" />
+    <Compile Include="Forms\itemproperties.Designer.vb">
+      <DependentUpon>itemproperties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\itemproperties.vb" />
+    <Compile Include="Controls\LabelNoCopy.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\modINI.vb" />
+    <Compile Include="Forms\myBorderPictureBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MySettings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MySettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MySettings.vb">
+      <DependentUpon>MySettings.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReleaseNotes.Designer.vb">
+      <DependentUpon>ReleaseNotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ReleaseNotes.vb" />
+    <Compile Include="Classes\Web_Update.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MyListBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\OptionsForm1.Designer.vb">
+      <DependentUpon>OptionsForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OptionsForm1.vb" />
+    <Compile Include="Classes\Program.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Classes\Spotify.vb" />
+    <Compile Include="Controls\TabMoveBottomButtons.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabPlaylists.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TransparentTxtBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Classes\Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormTouch.resx">
+      <DependentUpon>FormTouch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormYoutube.resx">
+      <DependentUpon>FormYoutube.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\hotkeysfrm.resx">
+      <DependentUpon>hotkeysfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\itemproperties.resx">
+      <DependentUpon>itemproperties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReleaseNotes.resx">
+      <DependentUpon>ReleaseNotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MyListBoxControl.resx">
+      <DependentUpon>MyListBoxControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OptionsForm1.resx">
+      <DependentUpon>OptionsForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TabMoveBottomButtons.resx">
+      <DependentUpon>TabMoveBottomButtons.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Forms\MySettings.xsc">
+      <DependentUpon>MySettings.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\MySettings.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MySettings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Forms\MySettings.xss">
+      <DependentUpon>MySettings.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_List_X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_List_X_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_List_X_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_OpenPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_OpenPic_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_OpenPic_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JamillPlayer_Playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Javmiller Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min Press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min_Hover_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Min_Press_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLay_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PLay_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playlist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playlist_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Playlist_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat All_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat All_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat All_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat All_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat All_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat None_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat Off1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat Off2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat One_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat One_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat One_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat One_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeat One_press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichPlayer_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichPlayer_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichPlayer_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichPlayer_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuffle None_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuffle None_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuffle_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shuffle_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_knob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_thumb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_thumb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider_thumb3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slider1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound Off_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Off_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X Press.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Hover_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X_Press_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\not_available.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#1 %2832x32%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seperator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Seperator1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seperator_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seperator_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons\RichPlayer_5.ico" />
+    <None Include="Resources\RichPlayer_6_16x16.png" />
+    <None Include="Resources\Stop_3_Press.png" />
+    <None Include="Resources\Stop_3_Hover.png" />
+    <None Include="Resources\Stop_3.png" />
+    <None Include="Resources\Pause_3_Press.png" />
+    <None Include="Resources\Pause_3_Hover.png" />
+    <None Include="Resources\Pause_3.png" />
+    <None Include="Resources\Play_3_Press.png" />
+    <None Include="Resources\Play_3_Hover.png" />
+    <None Include="Resources\Play_3.png" />
+    <None Include="Resources\Previous_3.png" />
+    <None Include="Resources\Next_3.png" />
+    <None Include="Resources\AB_a_Hover_new.png" />
+    <None Include="Resources\AB_a_new.png" />
+    <None Include="Resources\ab_a_Press_New.png" />
+    <None Include="Resources\ab_b_hover_New.png" />
+    <None Include="Resources\ab_b_New.png" />
+    <None Include="Resources\ab_b_press_New.png" />
+    <None Include="Resources\Reset_3.png" />
+    <None Include="Resources\Reset_3_Hover.png" />
+    <None Include="Resources\Reset_3_Press.png" />
+    <None Include="Resources\RichPlayer_6.png" />
+    <None Include="Resources\_Rexford_Rich_2.png" />
+    <Content Include="Icons\RichPlayer_6.ico" />
+    <None Include="Resources\Shuffle_3_Disabled.png" />
+    <None Include="Resources\Shuffle_3_Press.png" />
+    <None Include="Resources\Shuffle_3_Hover.png" />
+    <None Include="Resources\Shuffle_3.png" />
+    <None Include="Resources\_Repeat_One_3_Press.png" />
+    <None Include="Resources\_Repeat_One_3_Hover.png" />
+    <None Include="Resources\_Repeat_One_3.png" />
+    <None Include="Resources\_Repeat_Off_Press.png" />
+    <None Include="Resources\_Repeat_Off_Hover.png" />
+    <None Include="Resources\_Repeat_Off_3_Disabled.png" />
+    <None Include="Resources\_Repeat_Off_3.png" />
+    <None Include="Resources\_Repeat_All_3_Press.png" />
+    <None Include="Resources\_Repeat_All_3_Hover.png" />
+    <None Include="Resources\_Repeat_All_3_Disabled.png" />
+    <None Include="Resources\_Repeat_All_3.png" />
+    <None Include="Resources\Previous_3_Press.png" />
+    <None Include="Resources\Previous_3_Hover.png" />
+    <None Include="Resources\Next_3_Press.png" />
+    <None Include="Resources\Next_3_Hover.png" />
+    <None Include="Resources\Browser_Fullscreen_Press.png" />
+    <None Include="Resources\Browser_Fullscreen_Hover.png" />
+    <None Include="Resources\Browser_Fullscreen.png" />
+    <None Include="Resources\Browser_Add_Press.png" />
+    <None Include="Resources\Browser_Add_Hover.png" />
+    <None Include="Resources\Browser_Add.png" />
+    <None Include="Resources\Pause_press.png" />
+    <None Include="Resources\Pause_hover.png" />
+    <None Include="Resources\Pause_2.png" />
+    <None Include="Resources\Play_press.png" />
+    <None Include="Resources\Play_hover.png" />
+    <None Include="Resources\Play_21.png" />
+    <None Include="Resources\Prev_3_Press.png" />
+    <None Include="Resources\Prev_3_Hover.png" />
+    <None Include="Resources\Prev_3.png" />
+    <None Include="Resources\Turtle_Press.png" />
+    <None Include="Resources\Turtle_Hover.png" />
+    <None Include="Resources\Turtle.png" />
+    <None Include="Resources\Cheetah_Press.png" />
+    <None Include="Resources\Cheetah_Hover.png" />
+    <None Include="Resources\Cheetah.png" />
+    <None Include="Resources\Browser_Refresh_Press.png" />
+    <None Include="Resources\Browser_Refresh_Hover.png" />
+    <None Include="Resources\Browser_Refresh.png" />
+    <None Include="Resources\Browser_Previous_Press.png" />
+    <None Include="Resources\Browser_Previous_Hover.png" />
+    <None Include="Resources\Browser_Previous.png" />
+    <None Include="Resources\Browser_Next_Press.png" />
+    <None Include="Resources\Browser_Next_Hover.png" />
+    <None Include="Resources\Browser_Next.png" />
+    <None Include="Resources\RichPlayer_5.ico" />
+    <None Include="Resources\RichPlayer_5.png" />
+    <None Include="Resources\appbar.add.x12.png" />
+    <None Include="Resources\appbar.add.x121.png" />
+    <None Include="Resources\appbar.minus.x9.png" />
+    <None Include="Resources\Left_Hover.png" />
+    <None Include="Resources\Left_Norm.png" />
+    <None Include="Resources\Left_Press.png" />
+    <None Include="Resources\Right_Hover.png" />
+    <None Include="Resources\Right_Norm.png" />
+    <None Include="Resources\Right_Press.png" />
+    <None Include="Resources\Shuffle.png" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Rename.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Options.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Hotkeys.png" />
+    <None Include="Resources\About.png" />
+    <None Include="Resources\Refresh_Youtube.png" />
+    <None Include="Resources\Forward_Arrow.png" />
+    <None Include="Resources\Back_Arrow.png" />
+    <None Include="Resources\Refresh_Press.png" />
+    <None Include="Resources\Refresh_Hover.png" />
+    <None Include="Resources\Forward_Arrow_Press.png" />
+    <None Include="Resources\Forward_Arrow_Hover.png" />
+    <None Include="Resources\Back_Arrow_Press.png" />
+    <None Include="Resources\Back_Arrow_Hover.png" />
+    <None Include="Resources\YouTube-icon-full_color favicon.png" />
+    <None Include="Resources\YouTube-icon-full_color.png" />
+    <None Include="Resources\form_bg_12.png" />
+    <None Include="Resources\form_bg_15.png" />
+    <None Include="Resources\form_bg_14.png" />
+    <None Include="Resources\form_bg_13.png" />
+    <None Include="Resources\form_bg_11.png" />
+    <None Include="Resources\web-youtube-alt-2-metro-icon.png" />
+    <None Include="Resources\RichPlayer_16x16.png" />
+    <None Include="Resources\Placer.png" />
+    <None Include="Resources\MoveUp.png" />
+    <None Include="Resources\MoveTop.png" />
+    <None Include="Resources\MoveDown.png" />
+    <None Include="Resources\MoveBottom.png" />
+    <None Include="Resources\Spotify_Small.png" />
+    <None Include="Resources\Right_2_Press.png" />
+    <None Include="Resources\Right_2_Hover.png" />
+    <None Include="Resources\Right_2.png" />
+    <None Include="Resources\Left_2_Press.png" />
+    <None Include="Resources\Left_2_Hover.png" />
+    <None Include="Resources\Left_2.png" />
+    <None Include="Resources\RichPlayer_2_1.png" />
+    <None Include="Resources\Controls_bg2.png" />
+    <None Include="Resources\Controls_bg3.png" />
+    <None Include="Resources\Controls_bg4.png" />
+    <None Include="Resources\Controls_bg5.png" />
+    <None Include="Resources\Controls_bg1.png" />
+    <None Include="Resources\form_bg_2.png" />
+    <None Include="Resources\form_bg_3.png" />
+    <None Include="Resources\form_bg_4.png" />
+    <None Include="Resources\form_bg_5.png" />
+    <None Include="Resources\Songbox_off.png" />
+    <None Include="Resources\Controls_bg.png" />
+    <None Include="Resources\Songbox.png" />
+    <None Include="Resources\Songbox_Enhanced_Skin_1.png" />
+    <None Include="Resources\Songbox_Enhanced_Skin_1_off.png" />
+    <None Include="Resources\form_bg.png" />
+    <None Include="Resources\form_bg_7.png" />
+    <None Include="Resources\form_bg_8.png" />
+    <None Include="Resources\form_bg_10.png" />
+    <None Include="Resources\form_bg_9.png" />
+    <None Include="Resources\Controls_bg_hd.png" />
+    <None Include="Resources\not_available1.png" />
+    <None Include="Resources\form_bg_6.png" />
+    <None Include="Resources\form_bg_1.png" />
+    <None Include="Resources\appbar.arrow.right.png" />
+    <None Include="Resources\FullScreen_18.png" />
+    <None Include="Resources\Right_18.png" />
+    <None Include="Resources\not_available.png" />
+    <None Include="Resources\Play_disabled.png" />
+    <None Include="Resources\Stop_21.png" />
+    <None Include="Resources\Stop_disabled.png" />
+    <None Include="Resources\Stop_press.png" />
+    <None Include="Resources\Next_disabled.png" />
+    <None Include="Resources\Next_press.png" />
+    <None Include="Resources\Previous_disabled.png" />
+    <None Include="Resources\Previous_press.png" />
+    <None Include="Resources\Next_21.png" />
+    <None Include="Resources\Previous_21.png" />
+    <None Include="Resources\Previous_hover.png" />
+    <None Include="Resources\Next_hover.png" />
+    <None Include="Resources\Stop_hover.png" />
+    <None Include="Resources\Pause_disbaled.png" />
+    <None Include="Resources\All_hover.png" />
+    <None Include="Resources\All_normal.png" />
+    <None Include="Resources\All_pressed.png" />
+    <None Include="Resources\Off_disabled.png" />
+    <None Include="Resources\Off_hover.png" />
+    <None Include="Resources\Off_normal.png" />
+    <None Include="Resources\Off_pressed.png" />
+    <None Include="Resources\One_hover.png" />
+    <None Include="Resources\One_normal.png" />
+    <None Include="Resources\One_pressed.png" />
+    <None Include="Resources\Shuffle_2.png" />
+    <None Include="Resources\Shuffle_None_2.png" />
+    <None Include="Resources\Shuffle_press.png" />
+    <None Include="Resources\Shuffle_hover.png" />
+    <None Include="Resources\ab_a.png" />
+    <None Include="Resources\ab_a_Hover.png" />
+    <None Include="Resources\ab_a_Press.png" />
+    <None Include="Resources\ab_b.png" />
+    <None Include="Resources\ab_b_hover.png" />
+    <None Include="Resources\ab_b_press.png" />
+    <None Include="Resources\ab_reset_hover.png" />
+    <None Include="Resources\ab_reset_press.png" />
+    <None Include="Resources\Speed_Norm.png" />
+    <None Include="Resources\Speed_fast_hover.png" />
+    <None Include="Resources\Speed_fast_press.png" />
+    <None Include="Resources\speed_slow.png" />
+    <None Include="Resources\Speed_Slow_hover.png" />
+    <None Include="Resources\Speed_Slow_press.png" />
+    <None Include="Resources\Speed_fast.png" />
+    <None Include="Resources\Spotify_Icon.png" />
+    <Content Include="Icons\RichPlayer_3.ico" />
+    <None Include="Resources\FullScreen32.png" />
+    <None Include="Resources\FullScreen_25.png" />
+    <None Include="Resources\Rexford.png" />
+    <None Include="Resources\FullScreen.png" />
+    <None Include="Resources\FullScreen_hover.png" />
+    <None Include="Resources\FullScreen_press.png" />
+    <None Include="Resources\Play.png" />
+    <None Include="Resources\Play1.png" />
+    <None Include="Resources\Pause_icon.png" />
+    <None Include="Resources\Play_icon.png" />
+    <None Include="Resources\Controls_seperator.png" />
+    <None Include="Resources\RichPlayer_%40_1.png" />
+    <Content Include="Icons\RichPlayer_2_1.ico" />
+    <None Include="Resources\ab_a_Pressed.png" />
+    <Content Include="Icons\RichPlayer_1.ico" />
+    <None Include="Resources\testicon.bmp" />
+    <None Include="Resources\Rexford.ico" />
+    <None Include="Resources\Rexford1.ico" />
+    <None Include="Resources\Next_Icon.png" />
+    <None Include="Resources\PlayPause_Icon.png" />
+    <None Include="Resources\Prev_icon.png" />
+    <None Include="Resources\Detailed open with.png" />
+    <None Include="Resources\Song Box.png" />
+    <None Include="Resources\Abstract Lines.png" />
+    <None Include="Resources\form_options.png" />
+    <Content Include="Icons\Rexford.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AxInterop.AXVLC">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CoreAudio">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Sparkline.v13.2.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v13.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Data.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Printing.v13.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.Utils.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraBars.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="de\DevExpress.XtraEditors.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Data.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Printing.v13.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.Utils.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraBars.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="es\DevExpress.XtraEditors.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Interop.AXVLC">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Data.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Printing.v13.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.Utils.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraBars.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\DevExpress.XtraEditors.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.WindowsAPICodePack">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.WindowsAPICodePack.Shell">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Data.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Printing.v13.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Sparkline.v13.2.Core.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.Utils.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraBars.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ru\DevExpress.XtraEditors.v13.2.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="taglib-sharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="UltraID3Lib">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

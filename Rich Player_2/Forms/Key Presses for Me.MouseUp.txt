@@ -1,0 +1,103 @@
+'Key Presses
+        Public Sub MyBaseKeyUp(sender As Object, e As KeyEventArgs) Handles MyBase.KeyUp
+
+            If (e.KeyCode = Keys.Space AndAlso e.Modifiers = Keys.Control) Then
+
+                '.................Stop.................
+                StopSub()
+
+
+
+            ElseIf e.KeyCode = Keys.Space Then
+                If UseSpaceBar = False Then Return
+
+                '.................Play / Pause.................
+                If UsingYoutubeWithVLC Then
+                    PlayYoutube()
+                    Return
+                End If
+                If IsVideo Then
+                    PlaySub()
+                Else
+                    New_Play()
+                End If
+
+
+            ElseIf (e.KeyCode = Keys.Left AndAlso e.Modifiers = Keys.Control) Then
+
+                '.................Skip Backwards.................
+                Prevrwhover = True
+                SkipBackwards5Secs()
+                Prevrwhover = False
+
+
+
+            ElseIf e.KeyCode = Keys.Left Then
+                If UseSpaceBar = False Then Return
+
+                '..............Previous.................
+                If UsingYoutubeWithVLC Then
+                    PrevItem()
+                    Return
+                ElseIf UsingSpotify_v2 Then
+                    PrevItem()
+                Else
+                    If IsVideo Then
+                        If VlcPlayer.input.chapter.count > 1 Then
+                            VlcPlayer.input.chapter.prev()
+                            VLCChapterMarks.SelectedIndex = VlcPlayer.input.chapter.track
+                        Else
+                            PrevItem()
+                        End If
+                    Else
+                        PrevItem()
+                    End If
+                End If
+
+
+
+            ElseIf (e.KeyCode = Keys.Right AndAlso e.Modifiers = Keys.Control) Then
+
+                '.................Skip Forward.................
+                NextButhover = True
+                SkipForward5Secs()
+                NextButhover = False
+
+
+
+            ElseIf e.KeyCode = Keys.Right Then
+                If UseSpaceBar = False Then Return
+
+                '.................Skip.................
+
+                If UsingYoutubeWithVLC Then
+                    NextItem()
+                    Return
+                ElseIf UsingSpotify_v2 Then
+                    NextItem()
+                Else
+                    If IsVideo Then
+                        If VlcPlayer.input.chapter.count > 1 Then
+                            If VlcPlayer.input.chapter.track = VlcPlayer.input.chapter.count - 1 Then
+                                NextItem()
+                            Else
+                                VlcPlayer.input.chapter.next()
+                                VLCChapterMarks.SelectedIndex = VlcPlayer.input.chapter.track
+                            End If
+                        Else
+                            NextItem()
+                        End If
+                    Else
+                        NextItem()
+                    End If
+                End If
+
+            ElseIf e.KeyCode = Keys.Control AndAlso e.KeyCode = Keys.Shift AndAlso e.KeyCode = Keys.L Then
+                    Me.Location = New Point(0, 0)
+
+
+
+            End If
+
+
+        End Sub

@@ -1,0 +1,813 @@
+     Public Sub BarCheckItemEnhancedSkin_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin1_Checkbox.CheckedChanged
+
+            '   SuspendDrawing()
+            If EnhancedSkin1_Checkbox.Checked = True Then
+                'EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 1
+            Else
+                My.Settings.hasbackground = False
+            End If
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+            Else
+                Me.BackgroundImage = My.Resources.form_bg1
+            End If
+            '   ResumeDrawing()
+
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin2_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin2_Checkbox.CheckedChanged
+            ' SuspendDrawing()
+            If EnhancedSkin2_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                ' EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin2_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 2
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_21
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            ' ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin3_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin3_Checkbox.CheckedChanged
+            ' SuspendDrawing()
+            If EnhancedSkin3_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                'EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin3_Checkbox.Checked = True Then
+
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 3
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_31
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '   ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin4_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin4_Checkbox.CheckedChanged
+            ' SuspendDrawing()
+            If EnhancedSkin4_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                'EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin4_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 4
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_41
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '  ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin5_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin5_Checkbox.CheckedChanged
+            '   SuspendDrawing()
+            If EnhancedSkin5_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                ' EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin5_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 5
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_51
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '   ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin6_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin6_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin6_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                'EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin6_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 6
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_6
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '   ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin7_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin7_Checkbox.CheckedChanged
+            '   SuspendDrawing()
+            If EnhancedSkin7_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                'EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+            If EnhancedSkin7_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 7
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_71
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '   ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin8_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin8_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin8_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                'EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+
+            If EnhancedSkin8_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 8
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_81
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '    ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin9_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin9_Checkbox.CheckedChanged
+            '   SuspendDrawing()
+            If EnhancedSkin9_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                ' EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+
+            If EnhancedSkin9_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 9
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_9
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '    ResumeDrawing()
+        End Sub
+        Public Sub BarCheckItemEnhancedSkin10_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin10_Checkbox.CheckedChanged
+            '    SuspendDrawing()
+            If EnhancedSkin10_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                ' EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+            End If
+
+            If EnhancedSkin10_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 10
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_10
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+
+            '   ResumeDrawing()
+        End Sub
+        Public Sub EnhancedSkin11_Checkbox_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin11_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin11_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                ' EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+
+            End If
+            If EnhancedSkin11_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 11
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_11png
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '  ResumeDrawing()
+        End Sub
+        Public Sub EnhancedSkin12_Checkbox_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin12_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin12_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                ' EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+
+            End If
+            If EnhancedSkin12_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 12
+
+            Else
+                My.Settings.hasbackground = False
+
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_12
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            ' ResumeDrawing()
+        End Sub
+        Public Sub EnhancedSkin13_Checkbox_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin13_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin13_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                'EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+
+            End If
+            If EnhancedSkin13_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 13
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_13
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '  ResumeDrawing()
+        End Sub
+        Public Sub EnhancedSkin14_Checkbox_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin14_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin14_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                'EnhancedSkin14_Checkbox.Checked = False
+                EnhancedSkin15_Checkbox.Checked = False
+
+            End If
+            If EnhancedSkin14_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 14
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_14
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '    ResumeDrawing()
+        End Sub
+        Public Sub EnhancedSkin15_Checkbox_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles EnhancedSkin15_Checkbox.CheckedChanged
+            '  SuspendDrawing()
+            If EnhancedSkin15_Checkbox.Checked = True Then
+                EnhancedSkin1_Checkbox.Checked = False
+                EnhancedSkin2_Checkbox.Checked = False
+                EnhancedSkin3_Checkbox.Checked = False
+                EnhancedSkin4_Checkbox.Checked = False
+                EnhancedSkin5_Checkbox.Checked = False
+                EnhancedSkin6_Checkbox.Checked = False
+                EnhancedSkin7_Checkbox.Checked = False
+                EnhancedSkin8_Checkbox.Checked = False
+                EnhancedSkin9_Checkbox.Checked = False
+                EnhancedSkin10_Checkbox.Checked = False
+                EnhancedSkin11_Checkbox.Checked = False
+                EnhancedSkin12_Checkbox.Checked = False
+                EnhancedSkin13_Checkbox.Checked = False
+                EnhancedSkin14_Checkbox.Checked = False
+                ' EnhancedSkin15_Checkbox.Checked = False
+
+            End If
+
+            If EnhancedSkin15_Checkbox.Checked = True Then
+                My.Settings.hasbackground = True
+                My.Settings.EnhancedSkin = 15
+
+            Else
+                My.Settings.hasbackground = False
+            End If
+
+            If My.Settings.hasbackground = False Then
+                Me.BackgroundImage = Nothing
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg
+            Else
+                Me.BackgroundImage = My.Resources.form_bg_15
+                ' ControlsBGPanel.BackgroundImage = My.Resources.Controls_bg_hd
+            End If
+            '    ResumeDrawing()
+        End Sub
+
+
+
+
+<Flags()> _
+    Public Enum AnimateWindowFlags
+        AW_HOR_POSITIVE = &H1
+        AW_HOR_NEGATIVE = &H2
+        AW_VER_POSITIVE = &H4
+        AW_VER_NEGATIVE = &H8
+        AW_CENTER = &H10
+        AW_HIDE = &H10000
+        AW_ACTIVATE = &H20000
+        AW_SLIDE = &H40000
+        AW_BLEND = &H80000
+    End Enum
+    <DllImport("user32.dll")> _
+    Shared Function AnimateWindow(ByVal hwnd As IntPtr, ByVal time As Integer, ByVal flags As AnimateWindowFlags) As Boolean
+    End Function
+    Sub animateWinold(ByVal ObjectToAnimate As IntPtr, ByVal showObject As Boolean, ByVal IsControl As Boolean)
+        If showObject Then
+            If IsControl Then
+                AnimateWindow(ObjectToAnimate, 200, AnimateWindowFlags.AW_SLIDE Or AnimateWindowFlags.AW_HOR_NEGATIVE)
+            Else
+                AnimateWindow(ObjectToAnimate, 10, AnimateWindowFlags.AW_SLIDE Or AnimateWindowFlags.AW_HOR_POSITIVE)
+            End If
+        Else
+            If IsControl Then
+                AnimateWindow(ObjectToAnimate, 10, AnimateWindowFlags.AW_HIDE Or AnimateWindowFlags.AW_HOR_POSITIVE)
+            Else
+                AnimateWindow(ObjectToAnimate, 200, AnimateWindowFlags.AW_HIDE Or AnimateWindowFlags.AW_HOR_NEGATIVE)
+            End If
+        End If
+    End Sub
+
+
+     Public Sub MediaFinishedYouTubeVLCSub()
+
+            Return
+
+            If VlcPlayer.playlist.isPlaying Then
+                If VLCplayer_buffering = False Then
+                    NextItem()
+                    IsBuffering = False
+                End If
+
+
+                Return
+
+                If firstopen = False Then
+                    If IsShuffle Then           'Shuffle On
+                        Dim random As New System.Random
+                        Dim Index As System.Int32 = random.Next(0, YouTubePlaylist.Items.Count)
+                        YouTubePlaylist.SelectedIndex = Index
+                        PlaySelectedYouTubeVid()
+
+
+                    Else                        'Shuffle Off
+                        If repeat Then
+                            If repeatOne Then   'Repeat One
+
+                                VlcPlayer.playlist.items.clear()
+                                PlaySelectedYouTubeVid()
+
+
+                            Else                'Repeat All
+                                If YouTubePlaylist.Items.Count > 1 Then
+                                    If YouTubePlaylist.SelectedIndex = YouTubePlaylist.Items.Count - 1 Then
+                                        YouTubePlaylist.SelectedIndex = 0
+                                    Else
+                                        Dim index As Integer = YouTubePlaylist.SelectedIndex
+                                        index += 1
+                                        YouTubePlaylist.SelectedIndex = index
+                                    End If
+
+                                    VlcPlayer.playlist.items.clear()
+                                    PlaySelectedYouTubeVid()
+
+
+                                ElseIf YouTubePlaylist.Items.Count = 1 Then
+                                    YouTubePlaylist.SelectedIndex = 0
+
+                                    VlcPlayer.playlist.items.clear()
+                                    PlaySelectedYouTubeVid()
+
+
+                                End If
+                            End If
+
+                        Else                    'Repeat None
+                            If YouTubePlaylist.Items.Count > 1 Then
+                                If YouTubePlaylist.SelectedIndex = YouTubePlaylist.Items.Count - 1 Then
+                                    YouTubePlaylist.SelectedIndex = 0
+
+                                    VlcPlayer.playlist.items.clear()
+                                    VlcPlayer.playlist.stop()
+                                    PlaySelectedYouTubeVid()
+
+
+                                Else
+                                    Dim index As Integer = YouTubePlaylist.SelectedIndex
+                                    index += 1
+                                    YouTubePlaylist.SelectedIndex = index
+
+                                    VlcPlayer.playlist.items.clear()
+                                    PlaySelectedYouTubeVid()
+
+                                End If
+                            ElseIf YouTubePlaylist.Items.Count = 1 Then
+                                YouTubePlaylist.SelectedIndex = 0
+
+                                VlcPlayer.playlist.items.clear()
+                                VlcPlayer.playlist.stop()
+                                PlaySelectedYouTubeVid()
+
+
+                            End If
+                        End If
+                    End If
+                End If
+            Else
+                If VLCplayer_buffering = False Then
+                    IsBuffering = False
+                    NextItem()
+                End If
+
+
+            End If
+        End Sub
+
+
+
+
+
+
+
+
+
+
+#Region "Playlist   |   Paint / Formatting      not used"
+
+        Public Sub GridPlaylist_Paint(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs)
+            Return
+            If AppOpenFinished Then
+                PaintGirdPlaylistCells_Favorites()
+            End If
+
+        End Sub
+        Public Sub PaintGirdPlaylistCells_Favorites()
+
+
+            Return
+            Try
+                If AddingFiles Then Return
+                If FormClosingval Then Return
+                If PlaylistTabs.SelectedTabPage.Text = "Spotify" Then Return
+                Dim Playlist As GridPlaylist
+                Dim Scroller As Scroller
+                For Each c As Control In PlaylistTabs.SelectedTabPage.Controls
+                    If c.GetType Is GetType(Scroller) Then
+                        Scroller = c
+                        For Each c2 As Control In Scroller.Controls
+                            If c2.GetType Is GetType(GridPlaylist) Then
+                                Playlist = c2
+                            End If
+                        Next
+                    End If
+                Next
+
+
+
+
+
+                If AppOpenFinished Then
+                    AppOpenFinished = False
+                    For i As Integer = 0 To Playlist.RowCount - 1
+                        Dim c As Color = Color.Gainsboro
+                        Playlist.Rows(i).Height = Playlist_Rowheight
+
+                        If Playlist.Rows(i).Cells(4).Value.ToString = "True" Then
+                            c = FavoriteColorChooser.Color
+                        Else
+                            c = Color.Gainsboro
+                        End If
+
+                        'Positions
+                        If CheckBox_AllowSaveItemPosition.Checked Then
+
+                            If Playlist.Rows(i).Cells(5).Value <> 0 Then
+                                Playlist.Rows(i).DefaultCellStyle.Font = New System.Drawing.Font(FontDialog1.Font.FontFamily, FontDialog1.Font.Size, System.Drawing.FontStyle.Bold, _
+                                                                System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+
+                            Else
+                                ' My.Settings.PlaylistsFont = FontDialog1.Font
+                                Playlist.Rows(i).DefaultCellStyle.Font = New System.Drawing.Font(FontDialog1.Font.FontFamily, FontDialog1.Font.Size, System.Drawing.FontStyle.Regular, _
+                                                              System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+
+                            End If
+                        End If
+
+
+                        Playlist.Rows(i).DefaultCellStyle.ForeColor = c
+                        Playlist.Rows(i).DefaultCellStyle.SelectionForeColor = c
+
+
+
+
+
+
+                    Next
+                    AppOpenFinished = True
+                End If
+
+                Return
+
+                For Each p As DataGridViewRow In Playlist.Rows
+                    Dim c As Color = Color.Gainsboro
+                    Try
+
+                        'Favorites
+                        If p.Cells(4).Value.ToString = "True" Then
+                            c = FavoriteColorChooser.Color
+                        Else
+                            c = Color.Gainsboro
+                        End If
+
+                        'Positions
+                        If CheckBox_AllowSaveItemPosition.Checked Then
+
+                            If p.Cells(5).Value <> 0 Then
+                                p.DefaultCellStyle.Font = New System.Drawing.Font(FontDialog1.Font.FontFamily, FontDialog1.Font.Size, System.Drawing.FontStyle.Bold, _
+                                                                System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+
+                            Else
+                                ' My.Settings.PlaylistsFont = FontDialog1.Font
+                                p.DefaultCellStyle.Font = New System.Drawing.Font(FontDialog1.Font.FontFamily, FontDialog1.Font.Size, System.Drawing.FontStyle.Regular, _
+                                                              System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+
+                            End If
+                        End If
+
+
+                        p.DefaultCellStyle.ForeColor = c
+                        p.DefaultCellStyle.SelectionForeColor = c
+                    Catch ex As Exception
+                    End Try
+                Next
+
+
+
+
+            Catch ex As Exception
+
+            End Try
+
+        End Sub
+
+
+#End Region

@@ -1,0 +1,1214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Rich Player Versions
+------------------------------------------------------------
+2.7.4.4
+• Fixed bug when using Simplistic Mode where when app opens, it doesn't return to it's last location on screen.
+
+
+2.7.4.3
+• Fixed some major bugs with Menu
+
+
+2.7.4.2
+• Added Simplistic Mode under View Menu
+
+
+2.7.4.1
+• Fixed bug where is video as chapter marks and after loading the chapters, the playlist tab would scroll out of view
+
+
+2.7.4.0
+• Added Hotkey to toggle fullscreen for videos. (Edit &gt;&gt; Hotkeys)
+
+
+2.7.3.9
+• Fixed bugs with adding songs from Folder and Sub Folders, etc.
+
+
+2.7.3.8
+• Adjusted jarring animation when favoriting songs
+• Added manual update button in settings
+
+
+2.7.3.7
+• Updated sources for downloading/updating app. (Sources were failing to be discovered. i.e. web version could not be found, etc.)
+
+
+2.7.3.6
+• Added completed interactive tutorial. (Settings &gt;&gt; Tutorial)
+
+
+2.7.3.5
+• Added Refresh Button to left of Search Box
+
+
+2.7.3.3/4
+• Improved Updater
+
+
+2.7.3.2
+• Improved: Fixed bug with app not displaying on taskbar when first opened
+• Selecting audio device from drop down menu in Options window can be clicked anywhere on the whole menu and will open, verses before you could only click the arrow.
+
+
+2.7.3.1
+• Fixed bug with app not displaying on taskbar when first opened
+
+
+2.7.3.0
+• Added ability to right click on song and Search Artist with Youtube / YouTube Music
+
+
+2.7.2.9
+• Fixed bug with Last Selected Playlist tab not being brought to focus when app first opens.
+• Added "Open with YouTube" to right click menu for playlists with YouTube Videos added.
+
+
+2.7.2.8
+• Fixed a disabled YouTube
+
+
+2.7.2.7
+• Fixed a bug with adjusting speed for videos
+
+
+2.7.2.6
+• Shortcut Key Alt +Up will no longer fullscreen video if current playlist item is not a video. This is the appropriate response now.
+• Minor Bug fix when clicking Ok from Options window with no audio device selected, and also when playlist is empty where app would crash.
+• Bug fix: Spectrum was restricted by how many options is has. All options now work
+
+
+2.7.2.5
+• Added ability to Backup / Restore Settings.
+**You will still need to keep backups of your Playlists; these are not backed up with this feature.
+
+
+2.7.2.4
+• Fixed some bugs with playing videos, where when finished app would crash. And with starting a video with the volume and speed matching the trackbars.
+• Improved the fullscreen button for videos to be more precise.
+
+
+2.7.2.3
+• Increased size of playlist buttons (+,  -, and Quick Select)
+• Removed the Save All Playlists button to preserve room.
+If you wish to continue to use this, go to Settings &gt;&gt; Save All. This will save all settings and playlists as well.
+• Added Fullscreen button for videos. If double-clicking fails again to shrink down from fullscreen, use Alt + Tab to select main Rich Player window and click Alt + Up.
+• Adjusted size of Equalizer window to risk not going off screen when app is at bottom of screen.
+• Fixed bug with Temporarily Disable Hotkeys button; this feature should now work properly.
+
+
+2.7.2.2
+• Fixed: Previously release created a bug that broke hotkeys and Menu.
+
+
+2.7.2.1
+• Fixed bug when opening app where it doesn't bring app to focus (in front) and/or where it doesn't show it on the taskbar.
+• Add option to click Alt + Up to fullscreen videos if double-clicking on video fails. If double-clicking fails again to shrink down from fullscreen, use Alt + Tab to select main Rich Player window and click Alt + Up again.
+
+
+2.7.2.0
+• Added ability to click on taskbar icon to minimize app after it is focused.
+(This is a default behavior for most programs and is now implented with Rich Player)
+• Fixed bug with Artwork being delayed by 1 song
+
+
+2.7.1.9
+• Fixed bug when clicking previous with Play Only Favorites turned on that it would not go to previous favorited item
+• If VLC is not installed, app will now work regardless, except obviously videos will not be supported
+
+
+2.7.1.8
+• Fixed bug with Play Only Favorites: When Playlist contains no favorites, the app would hang. Now when enabled and playlist contains no playlists, it will continue to work as if the feature is disabled.
+• Fixed bug with hovering over items and then clicking it where it would turn all rows light gray.
+• Updated Icon
+• Added option to use hotkeys when using YouTube Browser
+
+
+2.7.1.7
+• Made improvements to Spotfiy, and to the overall Media menu
+• Added option to control players by checking to enable Media Keys, found in Media menu
+• Favorited songs that are now playing are colored
+• Option in Playlist Menu to play only Favorited songs in playlist, double-clicking on item will override.
+
+
+2.7.1.6
+• Added YouTube Browser from Media menu to browse and then add YouTube videos to the playlist
+• Also fixed YouTube bug
+• Added Radio Browser from Media menu to browse radio stations adn then add Radio Station to the playlist
+
+
+
+2.7.1.5
+• Increased Spotify refresh rate
+• Fixed some bugs with Spotify, one being it not releasing Spotify when clicking to Disable Spotify integration
+
+
+2.7.1.4
+• Spotify integration allows A / B Repeat and also Skip Forwards / Backwards*
+• Spotify integration now displays current position with time labels and seek bar* 
+• To maintain integration of Spotify, connection refreshes every 15 mins. Sorry for any inconvience.
+* Spotify refreshes every 5 seconds, no less, so as to not cause Rich Player to hang up.
+
+
+2.7.1.3
+• Fixed bug with losing control of Spotify after an hour.
+• Added option to Open Spotify with web app. Good for use if one does not have desktop app installed.
+(Either one is compatible with syncing with Rich Player) (To Sync with Spotify, use the Enable / Disable button)
+
+
+2.7.1.2
+• Fixed outdated version of Spotify API. Spotify now uses Web API, and will ask for you to sign in. It will sync with whichever client is active.
+• Cleaned out some other outdated features in the app. You may or may not notice a difference in performance.
+• Recommended to download / update References
+
+
+2.7.1.1
+• Fixed bug that caused some windows to get stuck hiding behind others.
+• Drag and Drop files onto Artwork to add to playlist. 
+• Updated blank artwork image
+• Fixed bug when changing Artwork Opacity it would change until reloading the song
+
+
+2.7.1.0
+• Fixed bug that broke some features in Playlist Tabs
+
+
+2.7.0.9
+• Fixed several bugs with new Menu &amp;&amp; with Enhanced Skins.
+• Added Image Layout option to Enhanced Skins.
+• Added inability to have more than on instance of the app.
+
+
+2.7.0.8
+• Fixed some bugs
+
+
+2.7.0.7
+• Fixed Bug with Player Volume not re-applying each time a song loads.
+• New: Added Modern Menus
+  (The old menu can be accessed using these keyboard shortcut keys: )
+• Player Volume bug fixed.
+
+
+2.7.0.6
+• When using Radio Stations, the song title will now be shown (only when using www.onlineradiobox.com)
+• Some bug fixes with VLC and Radio player
+
+2.7.0.5
+• Added beta ability to add radio stations from website URL (only tested with www.onlineradiobox.com, it is recommended that you use this website)
+
+2.7.0.4
+• Fixed bug with VLC not working in Drive Mode. (Drive mode is still in beta)
+
+2.7.0.3
+• Fixed some bugs with VLC not loaded properly, and not showing metadata
+• Fixed some flickering issues
+• Added ability for all trackbars to have optional text to show value. (To enable, right click on trackbars)
+• Added/Fixed some shortcut keys
+
+2.7.0.2
+• Major update! Rich Player *should now support any version of VLC installed (*tested with versions 2.2.2 and up)
+• Fixed some performance issues
+• Added ability to add YouTube videos to main playlists. (in Songs menu)
+• Added Equalizer, under Media menu
+
+2.7.0.1
+• Fixed bug where when not in Drive Mode playlists and settings would not save on exit.
+**FAIR WARNING: Drive Mode is very buggy and is still in beta stage
+
+
+2.7.0.0
+• Added Drive Mode! (Switch to Drive Mode under main menu)
+Drive Mode is great for tablets to be used as your car's radio and if you have some sort of tablet holder in the car.
+(Drive Mode may still be buggy, but for the most part it is stable)
+
+
+
+2.6.9.0
+• Fixed bugs with recently added Spotify features (Spotify View Account)
+• Updated UI / design for the Update dialog window
+
+
+2.6.8.9
+• Added Spotify View Account and when you Use Spotify, it will display your songs after you sign into your account.
+
+
+2.6.8.8
+• Fixed issues with connecting to Spotify (updated Spotify API to latest version)
+
+
+2.6.8.7
+• Added Problem Reporting. Can be find in Settings &gt;&gt; Options
+
+
+2.6.8.6
+• Added App Border Colors; this can be enabled or disabled, and you can customize the color.
+(Find it in View &gt;&gt; Windows Color &gt;&gt; App Border Color)
+• Added shortcut feature to open the Customize Trackbar(s) dialog: right clicking on any trackbar / slider will pull up the dialog
+• After installing this update, any issues with using Updater should be fixed
+
+
+2.6.8.5
+• Fixed sorting issues in Playlists &gt;&gt; Quick Open menu
+• Fixed issue with selected subtitle tracks and audio tracks not reloading after reloading a video
+
+
+2.6.8.4
+• Double clicking on artwork will now no longer fullscreen over taskbar, but will stay inside the screen's "working area"
+• Added Optimize Sound Quality in Settings
+
+
+2.6.8.3
+• When future updates are available, the update available label will be displayed even in Mini Mode now
+• Fixed issue with playlists being too tall, thus hiding behind the song arrange buttons panel
+• Backup/import settings now can backup/import playlists. (It is best to create a folder of your desired location just strictly for the backup)
+
+
+2.6.8.2
+• Fixed bugs with Lyrics
+• Fixed some audio distortion when changing player speed
+
+
+2.6.8.1
+• Search Box is now at top of playlists (moved because of displaying issues when playlists are sized down too small)
+(Remember Search Box can be hidden if desired, under the view menu)
+• Fixed some message boxes
+• Added ability to resize app height to fill screen height by double clicking when cursor changes when mouse is either at the very top or very bottom of app
+• Cleaned up menus
+• When updates are available a label will specify it at the top of app (not in minimode, though), you can click on it to download.
+• Fixed bug with renaming playlists if canceled was pressed
+
+
+2.6.8.0
+• Fixed issue when favoriting/un-favoriting songs the playlist would scroll back to top
+• Maximizing App will no longer cover taskbar
+• Added option to Backup / Import / Reset settings under Settings. Please note that this is a beta feature. You may just use this mainly for backing up. Restoring cannot be gaurteened to work, but all features *should* work fine, however since this has not be tested on a wide scale it is marked as a beta feature for now.
+• Added option to change background image scaling for enhanced skins. (Also some HD Enhanced Skins have been updated to remove top gray bar that faded into image.)
+
+
+2.6.7.9
+• Fixed auto-update bug where it would not grab a newer app version
+• Fixed bug with Save All Playlist button.
+• App no longer requires restart when switching out of MIni Mode. (But in the case of anything displaying incorrectly when changing, an app restart will fix the issues.)
+
+
+2.6.7.8
+• Added option to enable or disable shadows on icons (View &gt;&gt; Icons)
+• Slightly changed appearence of Speed &amp;&amp; Pitch text above the trackbars
+• Improved search: items will now correctly scroll into view when searching
+• Fixed bug with favorited songs color not reloading to desired color when re-opening app. Also, fixed where when changing the color, all favorited songs change their colors accordingly.
+
+
+2.6.7.7
+• Added another shape for customizing trackbars
+• Added more customization for trackbars
+
+
+2.6.7.6
+• Fixed bug where sliders would not get changed of their appearences when customizing them from the dialog (View &gt;&gt; Trackbars &gt;&gt; Customize Appearence(s))
+
+
+2.6.7.5
+• All trackbars are now updated with the new design and are customizable (View &gt;&gt; Trackbars &gt;&gt; Customize Appearence(s)
+
+
+2.6.7.4
+• Adjusted playlists scrolling to be more smoother by not scrolling so many lines at once
+• Artwork for blank album art has changed slightly
+• Seek bar design have changed
+• Seek bar is customizable (View &gt;&gt; Customize Trackbars
+• Fixed bug when switching to Mini Mode where playlist would fill the whole app.
+
+
+
+2.6.7.3
+• Updated design for overall app
+• Due to consistant bugs, resizing app is only functioning by using the resize grabber in the bottom right corner (its icon has been updated as well)
+• You can now customize the opacity of the controls background, find under View &gt;&gt; Controls Background
+
+
+2.6.7.2
+• Updated design for Mini Mode
+
+
+2.6.7.1
+• Fixed some issues with Touch Friendly Mode
+• Fixed small height with spectrum box
+• Awesome new feature! Spectrum box can now be customized. Just left click on it to change width, and right click to change style.
+• Added Run Wizard under Enhanced Skins menu for easier setup (and also to preview the images). (This wizard is the same as the first time setup wizard; it will not reset any other settings, though, so, don't worry.)
+• Fixed lagging with playing videos and skipping between chapter marks (applies to videos that have chapters).
+• Shortcut has been added for if your app moves off screen and cannot move back on. Click Ctrl+Shift+L to reset app location.
+• Fixed bug where icon would not show on taskbar until app is selected.
+
+
+2.6.7.0
+• WARNING: Prior to installing this update you should be sure to backup all of your playlists just in case! This update fixes a lot of bugs for first time users (with no settings applied yet), so your playlists may need to be re-added. All of your other settings should be intact, though.
+• Removed use of settings.ini for too many inconsistancies. (One main bug includes the equalizer not loading correct values. This is fixed) Don't worry, the app keeps all of your other settings in another place already (Appdata folder) and they will still be intact.
+• Fixed bugs with resizing app to not release dragging to resize when you release the mouse button. Now, though, you may only be able to resize with the resize grabber in the bottom-right corner.
+• For first time users, a setup wizard will start to help establish your preferences to the app's layout.
+
+
+2.6.6.9
+• Added Quick Open for playlists. Under Playlist menu. Choose directly for where most of your playlists are saved for best results.
+
+
+2.6.6.8
+• Fixed bug with artwork not refreshing while using Spotify
+• Added Quick Select button on Playlist Header/tabcontrol (Same will result as right clicking on any blank space)
+
+
+2.6.6.7
+• Added Playlist Tab orientation and width/height adjustment. Found in view menu.
+• Added Spectrum location to app refresh to fix when it becomes located in wrong place while using Mini Mode
+• Improved all Input boxes to match overall app skin. (When renaming playlists, items, etc.)
+• Added ability to show Player Volume trackbar in Mini Mode if desired
+
+
+2.6.6.6
+• Improved Play On App Start and playing state when changing tabs.
+You should no longer hear it begin to play then pause when the app first loads and when you have Play On App Start unchecked in the settings.
+• Fixed Taskbar Thumbnail view issues with displaying correctly sometimes for videos, particularly when in Minimode
+• Now app will open remembering the state that the flyouts were used for expanding to view playlists and for speed and pitch controls while using Mini Mode
+
+
+2.6.6.5
+• Added option to download quick update when upgrading app.
+If for some reason should upgrading fail, visit www.rexfordrich.com/apps and download the upgrade install from there to get the full upgrade setup file.
+• Possible improvement to fix bug that still manages to appear as mentioned in previous updates (...while using VLC where video and song titles, albums and artists would not refresh.)
+• Fixed bug with A/B Repeat
+• Seekbar fix for drawing lines when using saved positions and A/B Repeat
+• Fixed hotkey bug with play and pause
+
+
+2.6.6.4
+• Mini Mode: added VLC player chapter marks to be used when applicable
+• Mini Mode: Resize Buttons have hover and press graphics now
+• Slightly improved playlist loading when app start and Play On App Start setting performance
+• Fixed bug with properly loading VLC player last play position on app start
+• Other minor bug fixes
+• Possibly fixed bug while using VLC where video and song titles, albums and artists would not refresh. (Source of original error is currently unknown, so it is not guaranteed that bug is resolved)
+
+
+2.6.6.3
+• Crucial update from 2.6.6.2!
+• Fixed major issue from upgrading to 2.6.6.2 with app taking a long time to load.
+• Improved overall performance and stablity (with loading playlists and painting on them: favorites, positions, etc.).
+• Check release notes in 2.6.6.2 for more features
+
+
+2.6.6.2
+• Fixed bug where after clicking ok when update is finished download, app will not close.
+• Fixed position of search button in the search box when enabling Mini Mode.
+• Now bug should be fixed for favorited items in playlists; corrected the refresh code to properly support it.
+• Song Count and Total Play Time (approx. and also in beta stage) is now shown when you right click on playlist tabs.
+• App will check for updates 20 seconds after starting
+• Added ability to right click on blank space or other buttons on Tabcontrol to bring up a popup menu where you can change to another playlist with ease if you have many different playlists opened.
+
+
+2.6.6.1
+• Added Mini Mode, under main menu. (Can be activated when app is open, but to deactivate app will restart)
+Mini Mode contains all controls except volume trackbars. For some of you, this will make no difference if you have chosen not to show this in the first place.
+• Bug found where favorited songs sometimes does not change colors after app has been running for some time. (proven to not have been fixed as stated in previous version; for now restarting app will fix problem)
+
+
+2.6.6.0
+• Fixed glitch with colors not changing for favorited songs. (Added in an app refresh that occurs every 30 secs)
+• Fixed bug with VLC player to not load videos when changing tabs to another playing that is also playing a video.
+• Fixed bug that caused this issue: (sometimes when closing, you'll see the error: DragDrop redistration did not succeed. Do not worry, it'll close and will not distrupt any of your playlists or settings.) Now you should no longer see this error.
+• Playlists now will scroll fewer lines at a time so as to not scroll to quickly to help with finding a song
+• Settings.ini is saved to space out sections for easier reading now when modifying
+• Added shortcut (Ctrl + E) to open Equalizer window
+• Equalizer window will now properly open over the center of the main app with each time it opens
+• Reduced some of the app flickering when first open
+
+
+2.6.5.9
+Fixed flickering of labels when Artist and/or Album in unknown
+Fixed bug when VLC media changes where you can't fullscreen video or close out of fullscreen.
+
+
+2.6.5.8
+Added Equalizer (bass, midrange, treble) (Menu &gt;&gt; Show Equalizer)
+
+
+2.6.5.7
+Improved file opening progress bar. (It is now a part of the main app window, whereas before it was not; should improve performance just slightly)
+*known bug: sometimes when closing, you'll see the error: DragDrop redistration did not succeed. Do not worry, it'll close and will not distrupt any of your playlists or settings.
+
+
+2.6.5.6
+Added progress bar for when adding items to playlists.
+Adding files now are handled different, you may still be able to control the app while it adds the files at the same time. This is to help keep the app from crashing when adding a large amount of items to the playlists.
+*known bug: sometimes when closing, you'll see the error: DragDrop redistration did not succeed. Do not worry, it'll close and will not distrupt any of your playlists or settings.
+
+
+2.6.5.5
+Popup menu for when right clicking on playlist item will pop up in appropriate location now.
+Added missing .dll required for YouTube use with VLC
+
+
+2.6.5.4
+Inverted touch scrolling direction to the more common use.
+Fixed glitch where selecting a new song for the first time would result in the playlist scrolling back to the top.
+
+
+2.6.5.3
+Fixed flickering of Playlists.
+Playlists can now be scrolled by touch, for ease with tablets
+
+
+2.6.5.2
+Fixed Spotify play state when using Spotify. It now displays correct progress on taskbar item as well.
+Lyrics should work with Spotify now and will change to match when Spotify song changes.
+Fixed bug with skipping songs while using Spotify
+Added shortcuts for menu items: Show Lyrics and Use Spotify
+Lowered minimum size allowed for resizing app, to allow user to resize smaller on a smaller monitor
+
+
+2.6.5.1
+Added Audio Menu under Settings menu,  (For changing audio tracks for VLC use) and slightly improved subtitles. When changing between different subtitles there is a bug where you may have to click it twice to force it to be checked.
+
+
+2.6.5.0
+Added Play State color identification and seek status on taskbar item when using Spotify
+
+
+2.6.4.9
+Added ability to detect when system is shutting down and will close app before then, to prevent errors when windows tries to force close the app.
+Added ability to re-order tabs and remove from any position (whereas before only the last playlist could be removed)
+
+
+2.6.4.8
+Fixed lagging when Rich Player has many playlists opened
+
+
+2.6.4.7
+Added Auto Save in Settings
+Fixed bug with seekbar when using Spotify
+Fixed bug with skipping songs when playing videos using VLC
+Fixed bugs with Save All buttons to resume proper positions when changing playlists
+
+
+2.6.4.6
+Fixed bug with Save All Playlists button to properly save all.
+Fixed graphics bug with Play/Pause button when mouse is pressed down.
+Removed some clutter (unused variables) in Settings.ini and in code. This may or may not improve performance, depending on your device.
+
+
+2.6.4.5
+Possible workaround for Playlists' fonts displaying incorrectly on tablets:
+Added Adjust Font under Playlist menu
+Added Playlist Row Height adjustment under Playlist Menu
+App no longer requires Admin privileges (changed the way it starts on system startup) (You may need to reapply the app start on windows startup setting)
+Fixed Lyrics bug
+
+
+2.6.4.4
+Presumably fixed playlists not sizing correctly with tablets.
+Added Favorites and Positions to Use YouTube With VLC
+Added AddBut to Use YouTube With VLC; now you are able to add individual video URLs
+
+
+2.6.4.3
+Fixed bug with BASS.NET audio player not reloading last position on app start.
+
+
+2.6.4.2
+Remember from previous updates (2.6.3.9) backup playlists you have not updated to previous version to backup playlists!!
+Fixed bug with not releasing control of Spotify completely to re-gain correct time and seek positions.
+Added Show / Hide Spotify button when using Spotify. (Next to Repeat and Shuffle buttons)
+YouTube last item of each search page will be indicated in the platlist item's name.
+Fixed bug with Player Volume
+
+
+2.6.4.1
+Remember from last update (2.6.3.9) backup playlists you have not updated to previous version to backup playlists!!
+Fixed Skip Back 5 Secs to not go to 0 secs if current position is at 5 secs.
+Fixed YouTube with VLC not skipping to next song on MediaEnd
+Added YouTube Thumbnails (with VLC)
+Fixed some YouTube errors/bugs (If YouTube with VLC opens with any errors, it will load a blank playlist)
+Fixed bug with Videos not resuming last played postion on app start
+
+
+2.6.4.0
+Remember from last update (2.6.3.9) backup playlists you have not updated to previous version to backup playlists!!
+Fixed some bugs with YouTube Playlists using VLC
+Removed blank narrow first columns in playlists
+
+
+2.6.3.9
+Major Update!! Please backup playlists!
+New playlist formats
+Added new way to search YouTube in Other Media
+
+
+2.6.3.7
+Fixed bugs with re-ordering playlist items
+Added icons to some buttons in menus for ease of use
+
+
+2.6.3.6
+Added ability to Change Window Colors under View Menu (Hue/Sat/Lightness)
+
+
+2.6.3.5
+Fixed bugs with Save All Playlists button
+Increase Speed &amp; Pitch Buttons' size for ease with touch devices
+Added option to change spectrum colors under View menu
+
+
+2.6.3.4
+Fixed bugs with drawing of playlists
+Fixed bugs with newly formated playlists (favorites added into playlists)
+
+
+2.6.3.3
+Improved use of Spotify
+
+
+2.6.3.2
+Partial fix to use of YouTube
+Add ability to change color of Favorite songs under Playlist menu
+
+
+2.6.3.1
+Fixed bug with adding songs!
+
+
+2.6.3.0
+IMPORTANT!!! If you have not done so already, download newer version of VLC that is now supported: VLC 2.2.2
+Added Favorite button on Song Arrange Panel
+Fixed bug where newly added search box on playlist would not display correctly in Touch Friendly Mode
+
+
+2.6.2.0
+IMPORTANT!!! If you have not done so already, download newer version of VLC that is now supported: VLC 2.2.2
+Added Playlist search box. To enable go to View menu and checkt he appropriate checkbox.
+Fixed number of bugs
+
+
+2.6.1.0
+IMPORTANT!!! If you have not done so already, download newer version of VLC that is now supported: VLC 2.2.2
+DVDs are now supported; for best results open the last file inside the VIDEO_TS from the DVD (generally named VTS_##_#.VOB)
+Chapter marks will load correctly once the main title of the DVD starts playing
+
+
+2.6.0.0
+IMPORTANT!!! Download newer version of VLC that is now supported: VLC 2.2.2
+Available on www.rexfordrich.com
+Now supported: skip chapters in supported video files
+
+
+2.5.2.0
+Playlist Tab Control is smoother now, you will be able to have many playlists open and should have no issues with Rich Player lagging
+
+
+2.5.1.0
+Fixed bug with taskbar icon not displaying current progress
+Fixed VLC (For videos) media information i.e. Song title, artist, album, etc.
+Fixed some display glitches with Lyrics
+
+
+2.5.0.0
+Updated Skin
+Fixed some bugs with media end reach
+Fixed bug where shuffle only worked with repeat on
+*Removed wave trackbar from bottom, mute button, Player and Master volume trackbars, and some other controls so as to match the new skin.
+*YouTube use is now displayed incorrectly, this will be fixed in a later release; for now the main use of this app works.
+
+
+2.4.0.0
+Fixed updater (won't work until you update though. Visit website if app fails to update before this update; from then on, you should have ease in updating)
+Fixed Songbox alignment within the right side of the splitter
+Improved some rendering
+Added option to change default audio device
+
+
+2.3.0.0
+Added Splitter view (in between artwork/VLC and playlists)
+Fixed bug that prevent app from decreasing size to a size that was once allowed before
+
+
+2.2.0.0
+Added wavelength frequency seekbar at bottom.
+Adjusted HD presets to match new app size. (Re-apply your HD preset if applicable)
+Song name and such at the bottom is now hidden
+
+
+2.1.0.0
+Can now open old format .richplaylists files. New format will be saved as a temp_playlist when app closed and when you manually save a playlist
+Bug Fixes:
+Smoother and more accurate seekbar with BASS.NET Audio Player
+More accurate skip 5 secs with BASS.NET Audio Player
+More accurate saved positions with BASS.NET Audio Player
+Save all playlist buttons disabled changing playonstartcurrent positions when changing tabs (fixed)
+More accurate song end reached determination with BASS.NET Audio Player
+Now more file formats supported with BASS.NET Audio Player
+Time labels will show correct times with media an hour or longer
+Jump 5 secs hotkey fixed
+Hotkeys from AB repeat through Speed Control glitches are fixed upon app re-open.
+More hotkeys added (pitch control)
+Fixed HD (16:9) presets
+
+
+
+2.0.0.0
+--Major Overhaul!!
+--Backup all of your playlists!! Playlists are reformated now, your playlists will NOT open correctly, so keep them backed up so as to use them as a guide when recreating them.
+(Playlists are now in one file, whereas before there were three files in your app locations, one for song locations, friendly names, and positions. Now they are all saved together in one.)
+--Now support for pitch modulation (note: pitch only works for songs, not videos. When videos are playing, pitch will be disabled.)
+*Rich Player now uses two types of audio player: VLC (for videos) &amp; BASS.NET (for pitch modulation)
+
+
+1.9.0.7
+Added indicators on Seek Bar for any songs with saved positions and for A/B Repeat
+Fix bug with A/B Repeat where B would not restting when transitioning or skipping to a different song
+Seek Bar is smoother
+
+
+1.9.0.6
+Added Save/Remove Item Position buttons on bottom bar of playlists
+Added Save All under settings menu, which will save all settings
+Now Save Item Positions are always enabled
+
+
+1.9.0.5
+Fixed issues with extra playlists not loading last played songs
+
+
+1.9.0.4
+Added Resize Grabber for ease with touch devices
+
+
+1.9.0.3
+Fixed bugs with: Re-ordering items in other playlists, choosing custom artworks for certain songs in other playlists, and re-loading last played items and their positions in other playlists when re-opening app.
+
+
+1.9.0.2
+Fixed some glitches with Touch Friendly Mode
+
+
+1.9.0.1
+Fixed bug where play state is not saved when switching other playlists (PlayOnCurrent setting)
+Fixed bug where items are not bolded in other playlists when they have a saved position
+
+
+1.9.0.0
+Improved tabbed playlist use! Now you may have as many playlists as you desire!
+*PLEASE save all of your playlists before updating, just as a precaution!!
+
+
+1.8.0.6
+Added options to have custom Artwork images for certain songs. (Edit &gt;&gt; Artwork)
+Updated Open / Add button icon
+
+
+1.8.0.5
+Added option to have custom Enhanced Skin from file
+
+
+1.8.0.4
+Fixed bug with last played positions
+Fixed bugs with showing web updating windows and such
+
+
+1.8.0.3
+NOTICE!!! Due to bug in previous build, you must NOT update from Rich Player unless you have all five playlist opened, otherwise when update download is complete it will continue to open update windows. If you update from here, be sure that you have five playlists opened.
+Fixed bug that would not allow app to close if not all playlists existed
+Changed Now Playlist label on Status Bar to scroll to beginning if text was too large
+Fixed bug where possibly that speed might be changed when double clicking to add files rather than clicking OK within the open file dialog
+Added Save Postion to current song to a right click menu when you right click on the current time label
+*For reasons like the bugs fixed in this build, always be sure to check release notes in future updates!
+
+
+1.8.0.2
+Added option to disable Master Volume Slider (Settings &gt;&gt; Options)
+Customized Menus
+Slightly increased size of Open button on Status Bar
+
+
+1.8.0.1
+Fixed scaling issue with some devices
+
+
+1.8.0.0
+Major overall to skin:
+Added Hamburger-style Settings button with modified menus, now larger sized.
+Added status bar
+Added ability to change the top blur opacity on any enhanced skin. (View &gt;&gt; Top blur on background)
+Made changes to appearence of status of playlist items with a saved position enabled upon.
+
+
+1.7.2.20
+Improved Touch Friendly Mode with menu sizing
+
+
+1.7.2.19
+Fixed bug with last playlist (when have max number of playlist) would not keep name if not selected when closed.
+Known bug: will not play media files with special characters in filename. To fix, please rename an files accordingly.
+
+
+1.7.2.18
+Improved Touch Friendly Mode
+Improved Settings.ini (is more organized now to view and edit if need be)
+
+
+1.7.2.17
+Added Rename Current Item under playlist menu (To ALL playlist now)
+Added ability to save individual playlist items' position (To ALL playlist now)
+*If you add a saved position to an item, it will indicate it by changing the item to a lighter color
+
+
+1.7.2.16
+Bug found where files with an apostrophe in the filename will not play. 
+**IMPORTANT: To fix this, you must manually rename the file to replace the apostrophe with a _ (underscrore character) instead or just delete the apostrophe!
+
+
+1.7.2.15
+Adjusted appearance of menus
+
+
+1.7.2.14
+Fixed bug where update window will not re-open
+
+
+1.7.2.13
+Added new form of settings, uses Settings.ini instead, for easier use of modification.
+*Once you have upgraded and opened app, you may delete Rich Player.exe.settings, and Rich Player.exe_Default.Settings
+
+
+1.7.2.12
+Fixed some bugs when updating to 1.7.2.11 (with re-loading the playlists)
+
+
+1.7.2.11
+Fixed bugs with reorder playlist items in the first playlist
+Added progress bar for downloading updates
+
+
+1.7.2.10
+Added Rename Current Item under playlist menu (current only works for first playlist)
+Added ability to save individual playlist items' position (current only works for first playlist) (In beta stage, may contact bugs!)
+*If you add a saved position to an item, it will indicate it by changing the item to a lighter color
+
+1.7.2.9
+Added new AB repeat and reset buttons graphics
+Updated images &amp;&amp; text in the About window
+Fixed bug where the old Navigation icons would return when closing fullscreen of Artwork and when swiping to control navigation
+
+
+1.7.2.8
+Fixed bug with unchecking/re-checking Use Youtube where it would re-add playlist items, and also where it would show player volume scrollbar even if Hide Player Volume Controls checkbox is checked under the view menu.
+
+
+1.7.2.7
+Updated some icons, including app icon
+
+
+1.7.2.6
+Improved use of Youtube
+
+
+1.7.2.5
+Slight adjustment with appearance
+Removed taskbar thumbnail buttons for lacking of functionality
+
+
+1.7.2.4
+Fixed bug where taskbar thumbnail buttons wouldn't show
+
+
+1.7.2.3
+Added check for new release notes when checking for updates
+
+
+1.7.2.2
+Added option to hide player volume controls to make app look cleaner. Find under view menu.
+
+
+1.7.2.1
+App can now snap to screen edges
+
+
+1.7.2.0
+Added ability to modify settings outside of the app if app has errors opening. Find it in app's location: Rich Player.exe.settings
+
+
+1.7.1.17
+New Icon based off Enhanced Skin: HD &gt;&gt; Blue / Red Abstract
+
+
+1.7.1.16
+Added Add Folder and Subfolders to File menu
+Added manual locatoin adjustments in Extras menu
+
+
+1.7.1.15
+Fixed minor bugs
+
+
+1.7.1.14
+Fixed error if updates were checked without an internet connection
+
+
+1.7.1.13
+Added Youtube browsing buttons
+
+
+1.7.1.12
+Fullscreen Artwork will have zero transparency
+Added Youtube Playlist
+Fixed issue where Width &amp;&amp; Height boxes were not refreshing from the Extra menu
+
+
+1.7.1.11
+Fixed another Global Hotkey bug
+
+
+1.7.1.10
+Added ability to upgrade from Options
+
+
+1.7.1.9
+Fixed major bugs with Hotkeys
+
+
+1.7.1.8
+Added option to select None when editing Hotkeys
+
+
+1.7.1.7
+Added support for use of Special Media Keys (REMOVED for hotkey conflicts)
+
+
+1.7.1.6
+Added double click on Artwork to fullscreen
+Added more HD Enhanced Skins
+*Addtional File needs copied for updating: Rich Player.exe.config
+
+
+1.7.1.5
+Added support for another beta feature: Youtube
+
+
+1.7.1.4
+Improved performance
+Added ability to control Artwork's opacity (From View menu)
+*Addtional File needs copied for updating: Rich Player.exe.config
+
+
+1.7.1.3
+Added more controls to window resizing, under Extra menu (16:9 Presets)
+
+
+1.7.1.2
+Fixed some bugs with saving multiple playlist upon closing and restoring them on app re-open
+
+
+1.7.1.1
+Fixed bugs with loading multiple playlist that would prohibit Rich Player from loading completly
+
+
+1.7.1.0
+Improved Touch Friendy Mode
+**Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.7.0.9
+Improved Touch Friendy Mode
+**Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.7.0.8
+Added new gestures to Artwork box: two-finger tap to stop, and zoom gesture to full screen artwork
+Added Option: Touch Friendly Mode (beta feature)
+*This will increase size of playlist to be easier to tap
+Fixed Bug with displaying info for songs containing the '&amp;&amp;' character.
+**Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.7.0.6
+Improved Spotify search
+Improved Shuffle Play
+Added Open Folder + Subfolder; Open folder will just open the top / parent folder now
+
+
+1.7.0.5
+Added Open Folder
+Added Shuffle Play
+*Both from File Menu; will open subfolders as well
+
+
+1.7.0.3
+Added Search for Spotify control
+
+
+1.7.0.2
+Adjusted Spotify control; will now use Special Media keys, so as to not require activating the Spotify window to control the playback. (Works with Play/Pause, Previous, and Next)
+*Requires that only Spotify is opened, otherwise any other media programs opened will be control as well, since the Special Media keys work with many media apps.
+*(Hint: Now by using the Special Media keys, Rich Player may now control other media apps that use these keys. Just be sure to have Spotify closed. Only the Play/pause, previous and Next keys will be available, however.)
+
+
+1.7.0.1
+Added a view / hide menu button for Spotify. (Global Hotkey: Ctrl + Alt + H)
+Fixed minor bugs with controlling Spotify
+Added fix to A &amp; B repeat to have A position to be set at beginning as default
+
+
+1.7.0.0
+Added ability to play from Spotify (beta)
+*To use Spotify from Rich Player, first open Spotifiy and check the "Use Spotify" checkbox from the Spotify menu
+*Spotify MUST be installed
+*Bug: Spotify window can't be minimized for playback controls to work from Rich Player. When using playback controls, Spotify window we be made activated, so it is recommended to have Spotify window not overlapping. If desired, you may resize the Spotify window to a smaller size if needed.
+*Bug: Play / Pause Button does not update, since it is actually unable to detect if Spotify is either paused or played
+
+
+1.6.2.2
+Organized Enhanced Skins into its own menu under View
+Fixed glitches with load hotkeys into the combo boxes upon opening the Edit Hotkeys window
+Added warning when you have no saved lyrics if you have manually edited them
+Ridded the file extension from all playlists
+
+
+1.6.2.2
+Added 5 HD Enhanced Skin
+*Additional file needs to be copied to your app's location: Rich Player.exe.config
+
+
+1.6.2.1
+Fixed bug where Lyrics would not scroll up to the top after changing songs
+Fixed bug where Lyrics would not change size accordingly to the window size when adjusted
+Added mouse drag/gesture for scrolling lyrics(swiping up and down on lyrics will not change speed now, only if lyrics aren't shown will that work)
+Changed Lyrics in edit mode back color to a darker gray, making it easier to find the cursor when making changes
+
+
+1.6.2.0
+Updated Icon
+Fixed non-matching item heights of Global Hotkeys comboxes
+Added Function keys to AB Repeat and Speed Control
+Added ability to reload comboboxes upon opening Global Hotkey window
+Added the ability to show comments if lyrics are not found through www.songlyrics.com
+Added ability to save lyrics after downloading them once
+Added ability to edit lyrics, using Cutsomize Lyrics checkbox under the Edit menu. Double click on lyrics to begin editing after checking the Customize Checkbox. Be sure to save manually afterwards, using the save button under the lyrics in the Edit menu
+Added Artwork Gesture: Swipe Upwards/Downwards to control speed
+Updated About windows to grab directly from www.rexfordrich.com
+Added the use of 5 total Playlists
+Added more to the 5 Enhanced Skins (now features with the Bottom Bar)
+*If song (.mp3) contains comments it will display them if lyrics are not found and will replace ";" (without quotes) with a new line.
+**Additional file needs to be copied to your app's location: Rich Player.exe.config
+**Folder needs to be created / added to your app's location: Lyrics
+(Needed in order for lyrics to be saved)
+
+
+1.6.1.4
+Added Lyrics -- View &gt;&gt; Lyrics
+*Lyrics are pulled from www.songlyrics.com
+*If Lyrics are not found, feel free to sumbit them through www.songlyrics.com
+
+
+1.6.1.3
+Added More Enhanced Skins (5 total)
+*Additional file needs to be copied to your app's location: Rich Player.exe.config
+
+
+1.6.1.2
+Fixed seek bar inaccuracy with longer lengthed media files
+Added right click menu to Song Title, Artist and Album: Right Click &gt;&gt; Edit: Song Title, Artist, Album **Only works with MP3
+*Additional file needs to be copied to you app's location: References\ UltraID3Lib.Dll, and UltraID3Lib.xml
+
+
+1.6.1.0
+Fix bug with not showing hours for longer media files
+
+
+1.6.0.9
+Added More Global HotKeys: AB Repeat and Speed Controls
+*Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.6.0.8
+Fix bug with Options &gt;&gt; Play Song on App Start
+Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+Touch Version (Discontinued; touch version now exists in Standard Version)
+--------------
+1.1.1.2
+Added Lyrics -- View &gt;&gt; Lyrics
+Updated Icon
+Fixed non-matching item heights of Global Hotkeys comboxes
+Added Function keys to AB Repeat and Speed Control
+Added ability to reload comboboxes upon opening Global Hotkey window
+Added the ability to show comments if lyrics are not found through www.songlyrics.com
+Added ability to save lyrics after downloading them once
+Added ability to edit lyrics, using Cutsomize Lyrics checkbox under the Edit menu. Double click on lyrics to begin editing after checking the Customize Checkbox. Be sure to save manually afterwards, using the save button under the lyrics in the Edit menu
+Added Artwork Gesture: Swipe Upwards/Downwards to control speed
+Updated About windows to grab directly from www.rexfordrich.com
+Added the use of 5 total Playlists
+Added mouse drag/gesture for scrolling lyrics(swiping up and down on lyrics will not change speed now, only if lyrics aren't shown will that work)
+*If song (.mp3) contains comments it will display them if lyrics are not found and will replace ";" (without quotes) with a new line.
+*Lyrics are pulled from www.songlyrics.com
+*If Lyrics are not found, feel free to sumbit them through www.songlyrics.com
+**Additional file needs to be copied to your app's location: Rich Player.exe.config
+**Folder needs to be created / added to your app's location: Lyrics
+(Needed in order for lyrics to be saved)
+
+
+1.1.0.7
+Fixed seek bar inaccuracy with longer lengthed media files
+Added right click menu to Song Title, Artist and Album: Right Click&gt;&gt; Edit: Song Title, Artist, Album **Only works with MP3
+*Additional file needs to be copied to you app's location: References\ UltraID3Lib.Dll, and UltraID3Lib.xml
+
+
+1.1.0.5
+Fix bug with not showing hours for longer media files
+
+
+1.1.0.4
+Added More Global HotKeys: AB Repeat and Speed Controls
+*Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.1.0.3
+Added more Views:
+Bar Items: Time, and newly added: Player Speed percentage
+Player speed removed from underneath speed control buttons
+Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+1.1.0.2
+Added Enhanced Skin
+Fixed improper alignment of re-ordering buttons on Playlist1
+Disabled re-sizing due to incapability
+
+1.1.0.1
+Fix bug with Options &gt;&gt; Play Song on App Start
+Additional file needs to be copied to you app's location: Rich Player.exe.config
+
+
+
+</value>
+  </data>
+  <metadata name="DefaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
