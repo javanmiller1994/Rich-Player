@@ -18808,7 +18808,20 @@ Scope.UserModifyPlaybackState Or Scope.Streaming Or _
                     Dim Smtp_Server As New SmtpClient
                     Dim e_mail As New MailMessage()
                     Smtp_Server.UseDefaultCredentials = False
-                    Smtp_Server.Credentials = New System.Net.NetworkCredential("rexfordrich@gmail.com", "Superman_911")
+                    Dim username As String
+                    Dim password As String
+                    Dim xform2 As New MyInputBox2
+                    xform2.ShowDialog()
+                    xform2.Label1.Text = "Username:"
+
+                    xform2.RichLabel1.Text = "Password:"
+
+                    If xform2.DialogResult() = DialogResult.OK Then
+                        username = xform2.TextEdit1.Text
+                        password = xform2.TextEdit2.Text
+                    End If
+
+                    Smtp_Server.Credentials = New System.Net.NetworkCredential(username, password)
                     Smtp_Server.Port = 587
                     Smtp_Server.EnableSsl = True
                     Smtp_Server.Host = "smtp.gmail.com"
